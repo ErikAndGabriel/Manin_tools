@@ -1,0 +1,6 @@
+from colorama import init, Fore
+init()
+
+azul = Fore.BLUE
+amarelo = Fore.YELLOW
+preto = Fore.BLACK
