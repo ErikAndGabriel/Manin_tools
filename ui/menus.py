@@ -1,10 +1,15 @@
+from color import 
 menu_principal = f"""
-[1] PHISHING.   [2] OSINT
-[3] SCANNER.    [4] INSTALL
-[5] MALWARES.   [6] SQL
-[7] XSS.        [8] LORKUP
-[9] EXIT"""
-
+ ___[01] PHISHING.   [02] OSINT _____
+|___[03] SCANNER.    [04] INSTALL ___|
+|___[05] MALWARES.   [06] SQL _______|
+|___[07] XSS.        [08] LORKUP ____|
+|___[09] DOX.        [10] EXIT ______|
+|                                    |
+|____________________________________|
+                  |
+                  |
+"""
 menu_phishing = f"""
 [1] ZPHISHING.  [2] FOTO
 [3] INFO.       [4] NETESCOLA
@@ -33,4 +38,18 @@ menu_lorkup = f"""
 [01] INSTAGRAM [02] XVIDEOS [03] INFO_PESSOA
 [04] FACEBOOK  [05] GMAIL.  [06] REDDIT
 [07] PORNHUB.  [08] GOV.    [09] NETESCOLA
-[10] 
+[10] DISCORD.  [11] DS.     [12] PAINEL POLICIA
+[13] NETFLIX.  [14] ROBLOX. [15] YOUTUBE 
+[16] SISREG3.  [17] LINKEDI [18] BRADESCO 
+[19] SHESS.    [20] GITHUB  [21] YOSEE
+               [00] EXIT"""
+
+menu_malwares = f"""
+                |
+     ___________|__________
+     |          |         |
+[1] python [2] bash [3] powershell
+     |          |         |
+     |__________|_________|
+                |
+"""
