@@ -5,3 +5,4 @@ azul = Fore.BLUE
 amarelo = Fore.YELLOW
 preto = Fore.BLACK
 vermelho = Fore.RED
+verde = Fore.GREEN
