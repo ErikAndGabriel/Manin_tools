@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-Módulo de consulta SISREG - Baseado no PHP original
-Uso: from sisreg import SisregConsulta
-      consulta = SisregConsulta('38244335831')
-"""
-
 import hashlib
 import re
 import random
@@ -25,15 +16,8 @@ except:
 warnings.filterwarnings('ignore')
 
 class SisregConsulta:
-    """Classe para consulta ao SISREG - Baseado no PHP original"""
     
     def __init__(self, documento):
-        """
-        Inicializa e faz a consulta automaticamente
-        
-        Args:
-            documento (str): CPF (11 dígitos) ou CNS (15 dígitos)
-        """
         
         self.credenciais = [
             {'user': 'henrique.nevessol', 'senha': hashlib.sha256('Medicina2'.upper().encode()).hexdigest()},
@@ -57,7 +41,7 @@ class SisregConsulta:
         return ' '.join(re.sub(r'\s+', ' ', text).strip().split())
 
     def _extract_table(self, html, label):
-        """Extrai tabela - igual à função extractTable do PHP"""
+        
         start = html.find(label)
         if start == -1:
             return None
@@ -74,7 +58,7 @@ class SisregConsulta:
         return html[table_start:table_end]
 
     def _login(self):
-        """Faz login no sistema - igual à lógica do PHP"""
+        
         if self._logado:
             return True
             
@@ -143,9 +127,7 @@ class SisregConsulta:
         # Fazer login
         if not self._login():
             self.dados = {'error': True, 'message': 'error na credencial'}
-            return
-
-        # Buscar dados - igual ao PHP
+            
         url = 'https://sisregiii.saude.gov.br/cgi-bin/cadweb50?standalone=1'
         post = {
             'nu_cns': self.documento,
@@ -192,7 +174,7 @@ class SisregConsulta:
             response = self.session.post(url, data=post, headers=headers, timeout=30)
             html = response.text
             
-            # Decodificar entidades HTML - igual ao PHP
+            # Decodificar entidades HTML
             import html as html_parser
             html = html_parser.unescape(html)
             
@@ -230,7 +212,7 @@ class SisregConsulta:
             fields[self._clean(m[0])] = self._clean(m[2])
             fields[self._clean(m[1])] = self._clean(m[3])
         
-        # Estruturar dados - igual ao PHP
+        # Estruturar dados
         data = {}
         data['nome'] = fields.get('Nome', '')
         data['cpf'] = self._extrair_cpf(html)
@@ -251,13 +233,8 @@ class SisregConsulta:
         data['pais_residencia'] = fields.get('País de Residência', '')
         data['municipio_residencia'] = fields.get('Município de Residência', '')
         
-        # Extrair documentos - igual ao PHP
         documentos = self._extrair_documentos(html)
-        
-        # Extrair óbito - igual ao PHP
         obito = self._extrair_obito(html)
-        
-        # Extrair contatos - igual ao PHP
         contatos = self._extrair_contatos(html)
         
         return {
@@ -268,12 +245,12 @@ class SisregConsulta:
         }
 
     def _extrair_cpf(self, html):
-        """Extrai CPF - igual ao PHP"""
+        
         match = re.search(r'\b(\d{3}\.?\d{3}\.?\d{3}-?\d{2})\b', html)
         return self._clean(match.group(1) if match else '')
 
     def _extrair_cns(self, html):
-        """Extrai CNS - igual ao PHP"""
+      
         match = re.search(
             r'CNS:\s*</b>\s*</td>\s*</tr>\s*<tr[^>]*>\s*<td[^>]*>\s*<font[^>]*>\s*<B>\s*([^<]*?)\s*</B>\s*</font>',
             html, re.IGNORECASE
@@ -281,10 +258,8 @@ class SisregConsulta:
         return self._clean(match.group(1) if match else '')
 
     def _extrair_documentos(self, html):
-        """Extrai documentos - igual ao PHP"""
         documentos = {}
         
-        # Extrair RG
         if 'Num. RG' in html:
             pattern = re.compile(
                 r'<TR>\s*'
@@ -342,7 +317,7 @@ class SisregConsulta:
         return documentos if documentos else 'sem documentos'
 
     def _extrair_obito(self, html):
-        """Extrai óbito - igual ao PHP"""
+      
         obito = None
         
         start = html.find('Detalhes do Óbito:')
@@ -376,7 +351,7 @@ class SisregConsulta:
         return obito
 
     def _extrair_contatos(self, html):
-        """Extrai contatos - igual ao PHP"""
+      
         emails = None
         telefones = None
         
