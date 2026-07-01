@@ -1,4 +1,4 @@
-from color import 
+from color import azul 
 menu_principal = f"""
  ___[01] PHISHING.   [02] OSINT _____
 |___[03] SCANNER.    [04] INSTALL ___|
