@@ -1,4 +1,4 @@
-from color import azul 
+from color import azul, reset 
 menu_principal = f"""
  ___[01] PHISHING.   [02] OSINT _____
 |___[03] SCANNER.    [04] INSTALL ___|
@@ -11,26 +11,26 @@ menu_principal = f"""
                   |
 """
 menu_phishing = f"""
-[1] ZPHISHING.  [2] FOTO
-[3] INFO.       [4] NETESCOLA
-[5] AUDIO.      [6] EXIT
+{azul}[1] {reset}ZPHISHING.  {azul}[2] {reset}FOTO
+{azul}[3] {reset}INFO.       {azul}[4] {reset}NETESCOLA
+{azul}[5] {reset}AUDIO.      {azul}[6] {reset}EXIT
 """
 
 menu_osint = f"""
-[01] IP INFO   [02] EMAIL(Holehe)   [03] CPF
-[04] WHOIS     [05] GOOGLEDORK      [06] NOME
-[07] USERNAME  [08] CNPJ            [09] PHONE(API)
-[10] CEP.      [11] DDD/DDI         [12] NOME PAI
-[13] GITHUB.   [14] INSTAGRAM       [15] NOME MÃE
-[16] DIRB.     [17] DNS             [18] CNS
-[19] REDDIT.   [20] CEP(API)        [21] RG
-[22] PHONE     [23] EMAIL(API)      [00] EXIT
+{azul}[01] {reset}IP INFO   {azul}[02] {reset}EMAIL(Holehe)   {azul}[03] {reset}CPF
+{azul}[04] {reset}WHOIS     {azul}[05] {reset}GOOGLEDORK      {azul}[06] {reset}NOME
+{azul}[07] {reset}USERNAME  {azul}[08] {reset}CNPJ            {azul}[09] {reset}PHONE(API)
+{azul}[10] {reset}CEP.      {azul}[11] {reset}DDD/DDI         {azul}[12] {reset}NOME PAI
+{azul}[13] {reset}GITHUB.   {azul}[14] {reset}INSTAGRAM       {azul}[15] {reset}NOME MÃE
+{azul}[16] {reset}DIRB.     {azul}[17] {reset}DNS             {azul}[18] {reset}CNS
+{azul}[19] {reset}REDDIT.   {azul}[20] {reset}CEP(API)        {azul}[21] {reset}RG
+{azul}[22] {reset}PHONE     {azul}[23] {reset}EMAIL(API)      {azul}[00] {reset}EXIT
 """
 
 menu_scanner = f"""
-[01] NMAP
-[02] SCAN
-[00] EXIT
+{azul}[01] {reset}NMAP
+{azul}[02] {reset}SCAN
+{azul}[00] {reset}EXIT
 """
 
 menu_sqlmap = f"""
