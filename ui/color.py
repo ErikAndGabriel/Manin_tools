@@ -7,3 +7,4 @@ preto = Fore.BLACK
 vermelho = Fore.RED
 verde = Fore.GREEN
 reset = Fore.RESET
+roxo = Fore.PURPLE
