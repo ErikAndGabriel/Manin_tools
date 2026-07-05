@@ -2,7 +2,7 @@ import json
 
 def carregar_wordlist(wordlist):
   try:
-    with open(f"data/wordlist/{wordlist}", "r") as arq:
+    with open(f"{wordlist}", "r") as arq:
       lista = []
     for linha in arq:
       lista.append(linha.strip())
@@ -14,7 +14,7 @@ def carregar_wordlist(wordlist):
 
 def carregar_json(json):
   try:
-    with open(f"config/{json}", "r") as arq:
+    with open(f"{json}", "r") as arq:
       data = json.load(arq, indent=4)
     return data
   except FileNotFoundError:
