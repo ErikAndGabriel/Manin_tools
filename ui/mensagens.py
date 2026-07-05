@@ -1,4 +1,4 @@
-from color.py import vermelho, verde, amarelo 
+from color import vermelho, verde, amarelo 
 
 def erro(data):
   print(vermelho, data)
