@@ -1,3 +1,5 @@
+import json
+
 def carregar_wordlist(wordlist):
   try:
     with open(f"data/wordlist/{wordlist}", "r") as arq:
@@ -9,3 +11,8 @@ def carregar_wordlist(wordlist):
     return "erro, a worlist não foi encontrada"
   except Exception as e:
     return f"erro detectado: {e}"
+
+def carregar_json(json):
+  with open(f"config/{json}", "r") as arq:
+    data = json.load(arq, indent=4)
+    return data
