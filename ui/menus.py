@@ -1,4 +1,4 @@
-from color import azul, reset 
+from ui.color import azul, reset 
 menu_principal = f"""
  ___[01] PHISHING.   [02] OSINT _____
 |___[03] NETWORK     [04] INSTALL ___|
