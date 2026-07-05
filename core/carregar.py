@@ -13,6 +13,11 @@ def carregar_wordlist(wordlist):
     return f"erro detectado: {e}"
 
 def carregar_json(json):
-  with open(f"config/{json}", "r") as arq:
-    data = json.load(arq, indent=4)
+  try:
+    with open(f"config/{json}", "r") as arq:
+      data = json.load(arq, indent=4)
     return data
+  except FileNotFoundError:
+    return "erro, o json não foi encontrado"
+  except Exception as e:
+    return f"erro detectado: {e}"
