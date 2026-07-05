@@ -9,5 +9,5 @@ def sucesso(data):
 def mensagem(data):
   print(amarelo, data)
 
-def personalizar(data, color_tipo):
-  print(color_tipo, data)
+def personalizar(data):
+  print(roxo, data)
