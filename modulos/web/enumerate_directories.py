@@ -20,7 +20,7 @@ class EnumerateDirectori:
     site : {self.url}
     wordlist : data/wordlist/{wordlist}
     requests : get
-    """
+    """)
 
     for diretorios in self.wordlist:
       url = f"{self.url}{diretorios}"
