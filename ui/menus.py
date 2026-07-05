@@ -1,8 +1,8 @@
 from color import azul, reset 
 menu_principal = f"""
  ___[01] PHISHING.   [02] OSINT _____
-|___[03] SCANNER.    [04] INSTALL ___|
-|___[05] MALWARES.   [06] SQL _______|
+|___[03] NETWORK     [04] INSTALL ___|
+|___[05] MALWARES.   [06] WEB _______|
 |___[07] XSS.        [08] LORKUP ____|
 |___[09] DOX.        [10] EXIT ______|
 |                                    |
@@ -22,18 +22,22 @@ menu_osint = f"""
 {azul}[07] {reset}USERNAME  {azul}[08] {reset}CNPJ            {azul}[09] {reset}PHONE(API)
 {azul}[10] {reset}CEP.      {azul}[11] {reset}DDD/DDI         {azul}[12] {reset}NOME PAI
 {azul}[13] {reset}GITHUB.   {azul}[14] {reset}INSTAGRAM       {azul}[15] {reset}NOME MÃE
-{azul}[16] {reset}DIRB.     {azul}[17] {reset}DNS             {azul}[18] {reset}CNS
+{azul}[16] {reset}DNS       {azul}[17] {reset}DNS             {azul}[18] {reset}CNS
 {azul}[19] {reset}REDDIT.   {azul}[20] {reset}CEP(API)        {azul}[21] {reset}RG
 {azul}[22] {reset}PHONE     {azul}[23] {reset}EMAIL(API)      {azul}[00] {reset}EXIT
 """
 
-menu_scanner = f"""
+network = f"""
 {azul}[01] {reset}NMAP
 {azul}[02] {reset}SCAN
 {azul}[00] {reset}EXIT
 """
 
-menu_sqlmap = f"""
+web = f"""
+[1] WEB RECON [4] DIRECTORY ENUMERATION
+[2] SQL.      [5] SUB DOMAIS ENUMERATION
+[3] XSS.      [6] SSRF
+[0] EXIT
 """
 menu_lorkup = f"""
 [01] INSTAGRAM [02] XVIDEOS [03] INFO_PESSOA
