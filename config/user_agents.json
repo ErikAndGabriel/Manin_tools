@@ -1,0 +1,54 @@
+{
+  "user_agents": [
+    {
+      "nome": "Chrome Windows 11",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    },
+    {
+      "nome": "Firefox Windows 11",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0"
+    },
+    {
+      "nome": "Edge Windows 11",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"
+    },
+    {
+      "nome": "Chrome Linux",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    },
+    {
+      "nome": "Firefox Linux",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0"
+    },
+    {
+      "nome": "Safari macOS",
+      "tipo": "desktop",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15"
+    },
+    {
+      "nome": "Chrome Android",
+      "tipo": "mobile",
+      "user_agent": "Mozilla/5.0 (Linux; Android 15; SM-A146M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+    },
+    {
+      "nome": "Samsung Internet Android",
+      "tipo": "mobile",
+      "user_agent": "Mozilla/5.0 (Linux; Android 15; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/28.0 Chrome/138.0.0.0 Mobile Safari/537.36"
+    },
+    {
+      "nome": "Safari iPhone",
+      "tipo": "mobile",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
+    },
+    {
+      "nome": "Safari iPad",
+      "tipo": "tablet",
+      "user_agent": "Mozilla/5.0 (iPad; CPU OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1"
+    }
+  ]
+}
