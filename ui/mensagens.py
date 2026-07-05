@@ -1,4 +1,4 @@
-from color import vermelho, verde, amarelo 
+from ui.color import vermelho, verde, amarelo 
 
 def erro(data):
   print(vermelho, data)
