@@ -45,7 +45,8 @@ class EnumerateDirectori:
           self.erro += 1
         
         else:
-          print("erro inesperado")
+          print(f"{url} ---> {status}")
+          
     except Exception as e:
       return f"erro: {e}"
   def Relatorio(self):
