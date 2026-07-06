@@ -1,5 +1,5 @@
 from ui.menus import menu_principal, menu_osint 
-from ui.propt import prompt_menu, prompt_osint, prompt_cpf
+from ui.prompt import prompt_menu, prompt_osint, prompt_cpf
 from modulos.osint.cpf import SisregConsulta  # Fixed import
 
 def menu():
@@ -9,18 +9,15 @@ def menu():
             escolha = int(input(prompt_menu))  # Fixed variable name
             
             if escolha == 1:
-                # Handle option 1 - main menu option
-                print("Executando opção principal...")
-                # Add your logic here
+                
                 
             elif escolha == 2:
                 print(menu_osint)
                 escolha_osint = int(input(prompt_osint))  # Fixed variable name and added closing parenthesis
                 
                 if escolha_osint == 1:
-                    # Handle OSINT option 1
                     print("Executando OSINT opção 1...")
-                    # Add your logic here
+
                     
                 elif escolha_osint == 2:
                     # Handle OSINT option 2
