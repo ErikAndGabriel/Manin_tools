@@ -1,19 +1,20 @@
 import requests
 from core.carregar import carregar_wordlist
-from ui.mensagens import erro, sucesso, mensagem
+from core.carregar import carregar_json
+from ui.mensagens import erro, sucesso, mensagem, personalizar
 
-wordlist = "diretórios.txt"
+json_resposta = "json/respostas_web.json"
+json_app = "json/app.json"
+wordlist = "data/wordlist/diretórios.txt"
 
 class EnumerateDirectori:
   def __init__(self, url,):
     self.url = url
     self.wordlist = carregar_wordlist(wordlist)
-    self.numero_sucesso = 0
-    self.numero_erro = 0
-    self.enumerar_sucesso = 1
-    self.enumerar_erro = 1
-    self.sucesso = []
-    self.erro = []
+    self.resposta = carregar_json(json_resposta)
+    self.app = carregar_json(json_app)
+    self.sucesso = 0
+    self.erro = 0
     
   def Scan(self):
     print(f"""
@@ -26,41 +27,43 @@ class EnumerateDirectori:
       url = f"{self.url}{diretorios}"
       mensagem(f"testando : {url}")
       resposta = requests.get(url) 
-      if resposta.status_code == 200:
-        sucesso(f"sucesso : {self.url}{diretorios}")
-        self.sucesso.append(url)
-        self.numero_sucesso += 1
+      status = str(resposta.status_code)
+      
+      if status in self.resposta["respostas"]["sucesso"]:
+        sucesso(f"{url} ---> {status}")
+        self.sucesso +=1
+      
+      elif status in self.resposta["respostas"]["protegido"]:
+        personalizar(f"{url} ---> {status}")
+        self.sucesso += 1
+      
+      elif status in self.resposta["respostas"]["protegido"]:
+        sucesso(f"{url} ---> {status}")
+        self.sucesso += 1
+        
+      elif status in self.resposta["respostas"]["protegido"]:
+        self.erro += 1
 
       else:
-        self.erro.append(url)
-        self.numero_erro += 1
+        print("erro inesperado")
     
   def Relatorio(self):
     
     print(f"""
     ========== RELATORIO ==========
     site............: {self.url}
-    wordlist........: data/wordlist/{wordlist}
+    wordlist........: {wordlist}
     método..........: Get
-    total tentativas: {self.numero_sucesso + self.numero_erro}
-    encontrado......: {self.numero_sucesso}
-    não encontrado..: {self.numero_erro}
+    total tentativas: {self.sucesso + self.erro}
+    encontrado......: {self.sucesso}
+    não encontrado..: {self.erro}
     resposta sucesso: 200
     resposta erro...: 404
+    ========== CREDITOSS ==========
+    nome............: {self.app["nome"]}
+    github..........: {self.app["git"]}
+    versão..........: {self.app["version"]}
+    e-mail..........: {self.app["email"]}
+    mensagem........: {self.app["mensagem"]}
+    ===============================
     """)
-    print("")
-    sucesso(10 * "=", "[200]", 10 * "=") 
-    for url in self.sucesso:
-      sucesso(f"{self.enumerar_sucesso} sucesso: {url}")
-      self.enumerar_sucesso += 1
-    erro(10 * "=", "404", 10 * "=")
-    for url in self.erro:
-      erro(f"{self.enumerar_erro} erro: {url}")
-      self.enumerar_erro += 1
-
-   
-      
-
-    
-
-  
