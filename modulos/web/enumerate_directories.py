@@ -3,8 +3,8 @@ from core.carregar import carregar_wordlist
 from core.carregar import carregar_json
 from ui.mensagens import erro, sucesso, mensagem, personalizar
 
-json_resposta = "json/respostas_web.json"
-json_app = "json/app.json"
+json_resposta = "config/respostas_web.json"
+json_app = "config/app.json"
 wordlist = "data/wordlist/diretórios.txt"
 
 class EnumerateDirectori:
