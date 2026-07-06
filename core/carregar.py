@@ -12,9 +12,9 @@ def carregar_wordlist(wordlist):
   except Exception as e:
     return f"erro detectado: {e}"
 
-def carregar_json(json):
+def carregar_json(caminho):
   try:
-    with open(f"{json}", "r") as arq:
+    with open(f"{caminho}", "r") as arq:
       data = json.load(arq)
     return data
   except FileNotFoundError:
