@@ -4,9 +4,9 @@ def carregar_wordlist(wordlist):
   try:
     with open(f"{wordlist}", "r") as arq:
       lista = []
-    for linha in arq:
-      lista.append(linha.strip())
-    return lista
+      for linha in arq:
+        lista.append(linha.strip())
+      return lista
   except FileNotFoundError:
     return "erro, a worlist não foi encontrada"
   except Exception as e:
@@ -15,7 +15,7 @@ def carregar_wordlist(wordlist):
 def carregar_json(json):
   try:
     with open(f"{json}", "r") as arq:
-      data = json.load(arq, indent=4)
+      data = json.load(arq)
     return data
   except FileNotFoundError:
     return "erro, o json não foi encontrado"
