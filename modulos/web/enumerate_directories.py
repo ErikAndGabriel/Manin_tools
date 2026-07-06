@@ -22,31 +22,32 @@ class EnumerateDirectori:
     wordlist : {wordlist}
     requests : get
     """)
-
-    for diretorios in self.wordlist:
-      url = f"{self.url}{diretorios}"
-      mensagem(f"testando : {url}")
-      resposta = requests.get(url) 
-      status = str(resposta.status_code)
-      
-      if status in self.resposta["respostas"]["sucesso"]:
-        sucesso(f"{url} ---> {status}")
-        self.sucesso +=1
-      
-      elif status in self.resposta["respostas"]["protegido"]:
-        personalizar(f"{url} ---> {status}")
-        self.sucesso += 1
-      
-      elif status in self.resposta["respostas"]["redirecionamento"]:
-        sucesso(f"{url} ---> {status}")
-        self.sucesso += 1
+    try:
+      for diretorios in self.wordlist:
+        url = f"{self.url}{diretorios}"
+        mensagem(f"testando : {url}")
+        resposta = requests.get(url) 
+        status = str(resposta.status_code)
         
-      elif status in self.resposta["respostas"]["erro"]:
-        self.erro += 1
-
-      else:
-        print("erro inesperado")
-    
+        if status in self.resposta["respostas"]["sucesso"]:
+          sucesso(f"{url} ---> {status}")
+          self.sucesso +=1
+        
+        elif status in self.resposta["respostas"]["protegido"]:
+          personalizar(f"{url} ---> {status}")
+          self.sucesso += 1
+        
+        elif status in self.resposta["respostas"]["redirecionamento"]:
+          sucesso(f"{url} ---> {status}")
+          self.sucesso += 1
+        
+        elif status in self.resposta["respostas"]["erro"]:
+          self.erro += 1
+        
+        else:
+          print("erro inesperado")
+    except Exception as e:
+      return f"erro: {e}"
   def Relatorio(self):
     
     print(f"""
