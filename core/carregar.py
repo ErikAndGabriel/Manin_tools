@@ -1,8 +1,8 @@
 import json
 
-def carregar_wordlist(wordlist):
+def carregar_wordlist(caminho):
   try:
-    with open(f"{wordlist}", "r") as arq:
+    with open(f"{caminho}", "r") as arq:
       lista = []
       for linha in arq:
         lista.append(linha.strip())
