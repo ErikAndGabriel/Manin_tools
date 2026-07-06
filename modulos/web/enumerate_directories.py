@@ -19,7 +19,7 @@ class EnumerateDirectori:
   def Scan(self):
     print(f"""
     site : {self.url}
-    wordlist : data/wordlist/{wordlist}
+    wordlist : {wordlist}
     requests : get
     """)
 
@@ -37,11 +37,11 @@ class EnumerateDirectori:
         personalizar(f"{url} ---> {status}")
         self.sucesso += 1
       
-      elif status in self.resposta["respostas"]["protegido"]:
+      elif status in self.resposta["respostas"]["redirecionamento"]:
         sucesso(f"{url} ---> {status}")
         self.sucesso += 1
         
-      elif status in self.resposta["respostas"]["protegido"]:
+      elif status in self.resposta["respostas"]["erro"]:
         self.erro += 1
 
       else:
