@@ -12,7 +12,7 @@ def inicial():
   while True:
     try:
       print(menu_principal)
-      ot = int(input(prompt_menu)
+      ot = int(input(prompt_menu))
       for escolha in opcoes.values():
         if str(ot) == opcoes["escolha"]:
           opcoes[str(ot)]()
