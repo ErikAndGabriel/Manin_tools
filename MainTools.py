@@ -2,10 +2,10 @@ from ui.menus import menu_principal
 from ui.prompt import prompt_menu
 from ui.mensagens import erro
 from core.clear import clear
-
+from controllers.osint import painel_osint 
 opcoes = {
   "1": "phishing",
-  "2": "osint"
+  "2": "painel_osint"
 }
 
 def inicial():
