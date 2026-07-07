@@ -46,4 +46,7 @@ class Ip:
       is dst...........: {data["timezone"]["is_dst"]}
       offset...........: {data["timezone"]["offset"]}
       utc..............: {data["timezone"]["utc"]}
-      """
+      """)
+      return True
+    else:
+      return "erro de conexão"
