@@ -9,6 +9,7 @@ class Ip:
     self.arq = arquivo
     self.timeout = Timeout("api")
     self.headers = Headers("aleatorio")
+    
   def IpBusca(self):
     url = APIS["api_ip"]["url"].format(self.ip)
     resposta = requests.get(
@@ -16,19 +17,20 @@ class Ip:
       timeout=self.timeout,
       headers=self.headers
     )
+    
     if resposta.status_code == 200:
       data = resposta.json()
       print(f"""
       api em uso.......: {APIS["api_ip"]}
       ip...............: {data["ip"]}
-      sucesso..........: {data["sucess"]}
+      sucesso..........: {data["success"]}
       tipo.............: {data["type"]}
       continente.......: {data["continent"]}
       codigo continente: {data["continent_code"]}
       região...........: {data["region"]}
       codigo região....: {data["region_code"]}
       cidade...........: {data["city"]}
-      coordenadas......: {data["latitude"]}, {data["latitude"]}
+      coordenadas......: {data["latitude"]}, {data["longitude"]}
       is eu............: {data["is_eu"]}
       postal...........: {data["postal"]}
       calling_code.....: {data["calling_code"]}
