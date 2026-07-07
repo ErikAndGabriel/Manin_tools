@@ -1,19 +1,21 @@
 from ui.color import vermelho, verde, amarelo, roxo 
-
-def global():
+from core.clear import clear
+def outro():
   input("precione [ENTER]")
+  clear()
   
 def erro(data):
   print(vermelho, data)
-  global()
+  outro()
   
 def sucesso(data):
   print(verde, data)
-  global()
+  outro()
   
 def mensagem(data):
   print(amarelo, data)
+  outro()
   
 def personalizar(data):
   print(roxo, data)
-  global()
+  outro()
