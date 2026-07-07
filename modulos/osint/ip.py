@@ -6,7 +6,6 @@ import requests
 class Ip:
   def __init__(self, ip):
     self.ip = ip
-    self.arq = arquivo
     self.timeout = timeout("api")
     
   def IpBusca(self):
@@ -19,7 +18,7 @@ class Ip:
     if resposta.status_code == 200:
       data = resposta.json()
       print(f"""
-      api em uso.......: {APIS["api_ip"]}
+      api em uso.......: {APIS_IP["ipwhois"]}
       ip...............: {data["ip"]}
       sucesso..........: {data["success"]}
       tipo.............: {data["type"]}
