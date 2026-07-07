@@ -1,7 +1,7 @@
-APIS = {
+uAPIS = {
     "api_ip": {
-        "nome": "ip-api",
-        "url": "http://ip-api.com/json/{}",
+        "nome": "ipwhois",
+        "url": "https://ipwho.is/{}",
         "tempo": 10,
     },
     "api_cep": {
