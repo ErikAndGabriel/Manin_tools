@@ -1,5 +1,5 @@
 from config.APIS.api_ip import APIS_IP
-from core.config import Timeout, Headers
+from core.config import timeout
 import json 
 import requests 
 
