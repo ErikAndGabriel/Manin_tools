@@ -20,3 +20,5 @@ def inicial():
     except ValueError:
       erro("erro, somente numeros")
       continue
+    except Exception as e:
+      erro(f"erro: {e}") 
