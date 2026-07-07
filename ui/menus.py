@@ -149,7 +149,6 @@ HOME
 """
 
 menu_malwares = """
-menu_malwares = f"""
 HOME
 │
 ├── [01] PHISHING
@@ -167,5 +166,4 @@ HOME
 ├── [08] LOOKUP
 ├── [09] DOX
 └── [10] EXIT
-"""
 """
