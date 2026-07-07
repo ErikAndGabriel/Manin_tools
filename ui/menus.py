@@ -2,14 +2,14 @@ from ui.color import azul, reset
 menu_principal = f"""
 HOME
 │
-├── [01] PHISHING
+├── [01] PHISHING.     
 ├── [02] OSINT
 ├── [03] NETWORK
 ├── [04] INSTALL
 ├── [05] MALWARES
-├── [06] WEB
-├── [07] XSS
-├── [08] LOOKUP
+├── [06] C2
+├── [07] WEB
+├── [08] LORKUP
 ├── [09] DOX
 └── [10] EXIT
 """
