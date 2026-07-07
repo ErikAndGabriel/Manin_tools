@@ -1,4 +1,4 @@
-from config.apis import APIS
+from config.APIS.api_ip import APIS_IP
 from core.config import Timeout, Headers
 import json 
 import requests 
@@ -11,7 +11,7 @@ class Ip:
     self.headers = Headers("aleatorio")
     
   def IpBusca(self):
-    url = APIS["api_ip"]["url"].format(self.ip)
+    url = APIS_IP["ipwois"]["url"].format(self.ip)
     resposta = requests.get(
       url, 
       timeout=self.timeout,
