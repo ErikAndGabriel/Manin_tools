@@ -1,11 +1,11 @@
 from core.carregar import carregar_json 
 import random 
 def timeout(tempo=5):
-  if tipo == "api":
+  if tempo == "api":
     return 5
-  elif tipo == "scaner":
+  elif tempo == "scaner":
     return 10
-  elif tipo == "resposta":
+  elif tempo == "resposta":
     return 20
 
 def headers(tipo="aleatorio"):
