@@ -5,7 +5,7 @@ from core.clear import clear
 from controllers.osint import painel_osint 
 opcoes = {
   "1": "phishing",
-  "2": "painel_osint"
+  "2": painel_osint
 }
 
 def inicial():
@@ -13,7 +13,8 @@ def inicial():
     try:
       print(menu_principal)
       ot = int(input(prompt_menu))
-      if ot in opcoes:
+      if str(ot) in opcoes:
+        clear()
         opcoes[str(ot)]()
         
       else:
