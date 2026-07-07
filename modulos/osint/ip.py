@@ -4,18 +4,16 @@ import json
 import requests 
 
 class Ip:
-  def __init__(self, ip, arquivo):
+  def __init__(self, ip):
     self.ip = ip
     self.arq = arquivo
-    self.timeout = Timeout("api")
-    self.headers = Headers("aleatorio")
+    self.timeout = timeout("api")
     
   def IpBusca(self):
-    url = APIS_IP["ipwois"]["url"].format(self.ip)
+    url = APIS_IP["ipwhois"]["url"].format(self.ip)
     resposta = requests.get(
       url, 
-      timeout=self.timeout,
-      headers=self.headers
+      timeout=self.timeout
     )
     
     if resposta.status_code == 200:
@@ -37,14 +35,14 @@ class Ip:
       capital..........: {data["capital"]}
       borders..........: {data["borders"]}
       img..............: {data["flag"]["img"]}
-      emoje............: {data["flag"]["emoje"]}
+      emoje............: {data["flag"]["emoji"]}
       emoji_unicode....: {data["flag"]["emoji_unicode"]}
       asn..............: {data["connection"]["asn"]}
       org..............: {data["connection"]["org"]}
       isp..............: {data["connection"]["isp"]}
       domínio..........: {data["connection"]["domain"]}
       id...............: {data["timezone"]["id"]}
-      addr.............: {data["timezone"]["addr"]}
+      addr.............: {data["timezone"]["abbr"]}
       is dst...........: {data["timezone"]["is_dst"]}
       offset...........: {data["timezone"]["offset"]}
       utc..............: {data["timezone"]["utc"]}
