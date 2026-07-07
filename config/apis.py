@@ -2,7 +2,7 @@ uAPIS = {
     "api_ip": {
         "nome": "ipwhois",
         "url": "https://ipwho.is/{}",
-        "tempo": 10,
+        "tempo": 10
     },
     "api_cep": {
         "nome": "viacep",
