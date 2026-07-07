@@ -1,4 +1,15 @@
-from ui.menus import menu_principal, menu_osint 
-from ui.prompt import prompt_menu, prompt_osint, prompt_cpf
-from modulos.osint.cpf import SisregConsulta  
+from ui.menus import menu_principal
+from ui.prompt import prompt_menu
 
+opcoes = {
+  "1": "phishing",
+  "2": "osint"
+}
+
+def inicial():
+  while True:
+    try:
+      print(menu_principal)
+      ot = int(input(prompt_menu)
+      for escolha in opcoes.values():
+        if ot == opcoes[str(ot)]:mjhrq,
