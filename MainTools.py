@@ -1,6 +1,8 @@
 from ui.menus import menu_principal
 from ui.prompt import prompt_menu
 from ui.mensagens import erro
+from core.clear import clear
+
 opcoes = {
   "1": "phishing",
   "2": "osint"
@@ -22,3 +24,7 @@ def inicial():
       continue
     except Exception as e:
       erro(f"erro: {e}") 
+
+if __name__ == "__main__":
+  clear()
+  inicial()
