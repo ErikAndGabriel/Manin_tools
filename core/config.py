@@ -1,6 +1,6 @@
 from core.carregar import carregar_json 
 import random 
-def Timeout(tempo=5):
+def timeout(tempo=5):
   if tipo == "api":
     return 5
   elif tipo == "scaner":
@@ -8,7 +8,7 @@ def Timeout(tempo=5):
   elif tipo == "resposta":
     return 20
 
-def Headers(tipo="aleatorio"):
+def headers(tipo="aleatorio"):
   data = carregar_json("config/user_agents.json")
   user_agentes = data["user_agents"]
   if tipo == "aleatorio":
