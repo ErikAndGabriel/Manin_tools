@@ -1,4 +1,4 @@
-uAPIS = {
+APIS = {
     "api_ip": {
         "nome": "ipwhois",
         "url": "https://ipwho.is/{}",
