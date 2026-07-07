@@ -1,19 +1,19 @@
 from ui.color import azul, reset 
-menu_principal = f"""
+menu_principal = f"""{reset}
 HOME
 │
-├── [01] PHISHING.     
-├── [02] OSINT
-├── [03] NETWORK
-├── [04] INSTALL
-├── [05] MALWARES
-├── [06] C2
-├── [07] WEB
-├── [08] LORKUP
-├── [09] DOX
-└── [10] EXIT
+├── {azul}[01]{reset}PHISHING.     
+├── {azul}[02]{reset} OSINT
+├── {azul}[03]{reset} NETWORK
+├── {azul}[04]{reset} INSTALL
+├── {azul}[05]{reset} MALWARES
+├── {azul}[06]{reset} C2
+├── {azul}[07]{reset} WEB
+├── {azul}[08]{reset} LORKUP
+├── {azul}[09]{reset} DOX
+└── {azul}[10]{reset} EXIT
 """
-menu_phishing = f"""
+menu_phishing = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
@@ -34,7 +34,7 @@ HOME
 ├── [09] DOX
 └── [10] EXIT
 """
-menu_osint = f"""
+menu_osint = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
