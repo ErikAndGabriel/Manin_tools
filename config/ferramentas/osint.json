@@ -4,6 +4,6 @@
     "class": "Ip",
     "entrada": "IpBusca",
     "mensagem": "ip > ",
-    "tipo": input
+    "tipo": "str"
   }
 }
