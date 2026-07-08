@@ -3,7 +3,7 @@
     "nome": "IP INFO",
     "class": Ip,
     "entrada": IpBusca,
-    "mensagem": "ip > ",
+    "parametro": "ip > ",
     "tipo": "str"
   }
 }
