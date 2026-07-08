@@ -186,7 +186,7 @@ HOME
 └── [10] EXIT
 """
 
-menu_malwares = f"""
+menu_malware = f"""
 HOME
 │
 ├── [01] PHISHING
