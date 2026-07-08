@@ -3,6 +3,7 @@ from ui.prompt import prompt_osint
 from ui.mensagens import erro
 from modulos.osint.ip import Ip
 from core.carregar import carregar_json 
+from core.clear import clear
 
 data = "config/ferramentas/osint.json"
 ferramentas = carregar_json(data)
@@ -29,6 +30,9 @@ def painel_osint():
           parametro = float(input(ferramenta["parametro"]))
           user = ferramenta["class"](*parametro)
           user.ferramenta["entrada"]()
+      elif ot == 0:
+        clear()
+        break
       else:
         erro("somente numeros")
         continue
