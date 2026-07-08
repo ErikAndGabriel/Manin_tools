@@ -18,6 +18,6 @@ def carregar_json(caminho):
       data = json.load(arq)
     return data
   except FileNotFoundError:
-    return "erro, o json não foi encontrado"
+    return None
   except Exception as e:
-    return f"erro detectado: {e}"
+    return None
