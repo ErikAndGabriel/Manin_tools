@@ -2,6 +2,7 @@
   "1": {
     "nome": "IP INFO",
     "class": "Ip",
-    "entrada": "IpBusca"
+    "entrada": "IpBusca",
+    "mensagem": "ip > "
   }
 }
