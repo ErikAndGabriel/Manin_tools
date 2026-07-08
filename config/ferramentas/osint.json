@@ -1,8 +1,8 @@
 {
   "1": {
     "nome": "IP INFO",
-    "class": "Ip",
-    "entrada": "IpBusca",
+    "class": Ip,
+    "entrada": IpBusca,
     "mensagem": "ip > ",
     "tipo": "str"
   }
