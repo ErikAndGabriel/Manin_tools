@@ -1,7 +1,7 @@
 from ui.menus import menu_osint
 from ui.prompt import prompt_osint
 from ui.mensagens import erro
-from controllers.osint.ip import ferramentas 
+from controllers.osint import ferramentas 
 from core.clear import clear
 
 def painel_osint():
