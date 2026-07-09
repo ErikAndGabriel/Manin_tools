@@ -1,9 +1,0 @@
-{
-  "1": {
-    "nome": "IP INFO",
-    "class": Ip,
-    "entrada": IpBusca,
-    "parametro": "ip > ",
-    "tipo": "str"
-  }
-}
