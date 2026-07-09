@@ -1,4 +1,5 @@
 import time 
 
-print("ainda não adotado")
-time.sleep(5)
+def painel_c2():
+  print("ainda não adotado")
+  time.sleep(5)
