@@ -16,19 +16,15 @@ def inicial():
     try:
       print(menu_principal)
       ot = int(input(prompt_menu))
+      if ot == 0:
+        break
       if str(ot) in opcoes:
         clear()
- 
         opcoes[str(ot)]()
-      elif ot == 0:
-        break
         
       else:
         erro("escolha invalida")
         continue
-      if opcoes in None:
-        erro("arquivo nao encontrado")
-        continue 
         
     except ValueError:
       erro("erro, somente numeros")
