@@ -6,7 +6,7 @@ def painel_network():
   while True:
     try:
       print(menu_network)
-      ot = int(input(prompt_network)
+      ot = int(input(prompt_network))
       if ot == 0:
         clear()
         break
