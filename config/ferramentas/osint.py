@@ -1,4 +1,4 @@
-from controllers.osint.ip import painel_ip
+from controllers.osint.osint_ip import painel_ip
 from config.APIS.apis_ip import APIS_IP
 
 ferramentas = {
