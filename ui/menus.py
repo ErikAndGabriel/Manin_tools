@@ -2,7 +2,7 @@ from ui.color import azul, reset
 menu_principal = f"""{reset}
 HOME
 │
-├── {azul}[01]{reset}PHISHING.     
+├── {azul}[01]{reset} PHISHING.     
 ├── {azul}[02]{reset} OSINT
 ├── {azul}[03]{reset} NETWORK
 ├── {azul}[04]{reset} INSTALL
