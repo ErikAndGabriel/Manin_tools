@@ -9,6 +9,12 @@ def painel_web():
     try:
       print(menu_web)
       ot = int(input(prompt_web))
+      if ot == 0:
+        clear()
+        break
+      else:
+        erro("escolha invalida")
+        continue
     except ValueError:
       erro("somente numeros")
       continue
