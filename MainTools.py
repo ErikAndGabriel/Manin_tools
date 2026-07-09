@@ -1,6 +1,7 @@
 from ui.menus import menu_principal
 from ui.prompt import prompt_menu
 from ui.mensagens import erro
+from ui.banner import banner_principal 
 from core.clear import clear
 from controllers.osint import painel_osint
 from controllers.phishing import painel_phishing
@@ -14,6 +15,7 @@ from config.ferramentas.menu_principal import opcoes
 def inicial():
   while True:
     try:
+      print(banner_principal)
       print(menu_principal)
       ot = int(input(prompt_menu))
       if ot == 0:
