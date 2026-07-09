@@ -13,6 +13,9 @@ def painel_osint():
     try:
       print(menu_osint)
       ot = int(input(prompt_osint))
+      if ot == 0:
+        clear()
+        break
       if str(ot) in ferramentas:
         ferramenta = ferramentas[str(ot)]
         
