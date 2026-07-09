@@ -18,7 +18,8 @@ def painel_web():
     except ValueError:
       erro("somente numeros")
       continue
-      
+    except KeyboardInterrupt:
+      break
     except Exception as e:
       erro(f"erro: {e}")
       continue
