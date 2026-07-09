@@ -2,16 +2,14 @@ from ui.menus import menu_principal
 from ui.prompt import prompt_menu
 from ui.mensagens import erro
 from core.clear import clear
-from core.carregar import carregar_json 
 from controllers.osint import painel_osint
 from controllers.phishing import painel_phishing
 from controllers.web import painel_web
 from controllers.network import painel_network
 from controllers.malware import painel_malware
 from controllers.loorkup import painel_lorkup
+from config.ferramentas.menu_principal import opcoes
 
-caminho = "config/ferramentas/menu_principal.json"
-opcoes = carregar_json(caminho)
 
 def inicial():
   while True:
