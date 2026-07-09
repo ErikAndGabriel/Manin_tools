@@ -4,48 +4,21 @@ import json
 import requests 
 
 class Ip:
-  def __init__(self, ip):
+  def __init__(self, ip, api):
     self.ip = ip
+    self.api_ip = api
     self.timeout = timeout("api")
     
   def IpBusca(self):
-    url = APIS_IP["ipwhois"]["url"].format(self.ip)
+    url = self.api_ip.format(self.ip)
     resposta = requests.get(
       url, 
       timeout=self.timeout
     )
     
     if resposta.status_code == 200:
-      data = resposta.json()
-      print(f"""
-      api em uso.......: {APIS_IP["ipwhois"]}
-      ip...............: {data["ip"]}
-      sucesso..........: {data["success"]}
-      tipo.............: {data["type"]}
-      continente.......: {data["continent"]}
-      codigo continente: {data["continent_code"]}
-      região...........: {data["region"]}
-      codigo região....: {data["region_code"]}
-      cidade...........: {data["city"]}
-      coordenadas......: {data["latitude"]}, {data["longitude"]}
-      is eu............: {data["is_eu"]}
-      postal...........: {data["postal"]}
-      calling_code.....: {data["calling_code"]}
-      capital..........: {data["capital"]}
-      borders..........: {data["borders"]}
-      img..............: {data["flag"]["img"]}
-      emoje............: {data["flag"]["emoji"]}
-      emoji_unicode....: {data["flag"]["emoji_unicode"]}
-      asn..............: {data["connection"]["asn"]}
-      org..............: {data["connection"]["org"]}
-      isp..............: {data["connection"]["isp"]}
-      domínio..........: {data["connection"]["domain"]}
-      id...............: {data["timezone"]["id"]}
-      addr.............: {data["timezone"]["abbr"]}
-      is dst...........: {data["timezone"]["is_dst"]}
-      offset...........: {data["timezone"]["offset"]}
-      utc..............: {data["timezone"]["utc"]}
-      """)
+      for chave, valor in resposta.values():
+        print(f"{chave} : {valor}")
       return True
     else:
       return "erro de conexão"
