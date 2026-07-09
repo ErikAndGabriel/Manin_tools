@@ -13,6 +13,6 @@ def painel_network():
     except ValueError:
       erro("somente numeros")
     except KeyboardInterrupt:
-      break
+      exit()
     except Exception as e:
       erro(f"erro: {e}")
