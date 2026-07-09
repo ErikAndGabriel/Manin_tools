@@ -19,7 +19,7 @@ def painel_web():
       erro("somente numeros")
       continue
     except KeyboardInterrupt:
-      break
+      exit()
     except Exception as e:
       erro(f"erro: {e}")
       continue
