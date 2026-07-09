@@ -11,7 +11,7 @@ HOME
 ├── {azul}[07]{reset} WEB
 ├── {azul}[08]{reset} LORKUP
 ├── {azul}[09]{reset} DOX
-└── {azul}[10]{reset} EXIT
+└── {azul}[00]{reset} EXIT
 """
 menu_phishing = f"""{reset}
 HOME
@@ -32,7 +32,7 @@ HOME
 ├── [07] XSS
 ├── [08] LOOKUP
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
 menu_ip = f"""{reset}
 HOME
@@ -108,7 +108,7 @@ HOME
 ├── [07] XSS
 ├── [08] LOOKUP
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
 menu_network = f"""
 HOME
@@ -125,7 +125,7 @@ HOME
 ├── [07] XSS
 ├── [08] LOOKUP
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
 menu_web = f"""
 HOME
@@ -146,7 +146,7 @@ HOME
 ├── [07] XSS
 ├── [08] LOOKUP
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
 
 menu_lookup = f"""
@@ -183,7 +183,7 @@ HOME
 │   ├── {azul}[21]{reset} YOSEE
 │   └── {azul}[00]{reset} VOLTAR
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
 
 menu_malware = f"""
@@ -203,5 +203,5 @@ HOME
 ├── [07] XSS
 ├── [08] LOOKUP
 ├── [09] DOX
-└── [10] EXIT
+└── [00] EXIT
 """
