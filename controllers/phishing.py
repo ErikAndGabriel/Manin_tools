@@ -8,7 +8,7 @@ def painel_phishing():
     try:
       print(menu_phishing)
       ot = int(input(prompt_phishing))
-      if ot == 0:
+      if ot == 10:
         clear()
         break
         
