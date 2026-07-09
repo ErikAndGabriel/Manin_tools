@@ -1,4 +1,5 @@
 import time 
 
-print("nao adotado")
-time.sleep(5)
+def painel_dox():
+  print("nao adotado")
+  time.sleep(5)
