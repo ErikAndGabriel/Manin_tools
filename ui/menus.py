@@ -110,7 +110,7 @@ HOME
 ├── [09] DOX
 └── [00] EXIT
 """
-menu_network = f"""
+menu_network = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
@@ -127,7 +127,7 @@ HOME
 ├── [09] DOX
 └── [00] EXIT
 """
-menu_web = f"""
+menu_web = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
@@ -149,7 +149,7 @@ HOME
 └── [00] EXIT
 """
 
-menu_lookup = f"""
+menu_lookup = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
@@ -186,7 +186,7 @@ HOME
 └── [00] EXIT
 """
 
-menu_malware = f"""
+menu_malware = f"""{reset}
 HOME
 │
 ├── [01] PHISHING
