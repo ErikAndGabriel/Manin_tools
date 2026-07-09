@@ -16,5 +16,7 @@ def painel_phishing():
         continue
     except ValueError:
       erro("somente numeros")
+    except KeyboardInterrupt:
+      break
     except Exception as e:
       erro(f"erro {e}")
