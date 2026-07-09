@@ -13,7 +13,7 @@ opcoes = {
   "2": painel_osint,
   "3": painel_network,
   "4": painel_install,
-  "5": painel_malwares,
+  "5": painel_malware,
   "6": painel_c2,
   "7": painel_web,
   "8": painel_lorkup,
