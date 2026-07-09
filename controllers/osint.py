@@ -37,6 +37,6 @@ def painel_osint():
       erro("erro, somente numeros")
       continue
     except KeyboardInterrupt:
-      break
+      exit()
     except Exception as e:
       erro(f"erro: {e}")
