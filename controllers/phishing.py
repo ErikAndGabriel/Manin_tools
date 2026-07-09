@@ -8,10 +8,12 @@ def painel_phishing():
     try:
       print(menu_phishing)
       ot = int(input(prompt_phishing))
-      if ot == 10:
+      if ot == 0:
         clear()
         break
-        
+      else:
+        erro("escolha invalida") 
+        continue
     except ValueError:
       erro("somente numeros")
     except Exception as e:
