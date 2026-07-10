@@ -4,7 +4,7 @@ from ui.mensagens import erro, outro
 from modulos.osint.ip import Ip
 from core.clear import clear
 from config.ferramentas.ip import ferramentas_ip
-
+from config.APIS.api_ip import APIS_IP 
 def painel_ip():
   while True:
     try:
@@ -15,7 +15,7 @@ def painel_ip():
         break
         
       if str(ot) in ferramentas_ip:
-        api = ferramentas_ip[str(ot)]["url"]
+        api = APIS_IP[str(ot)]["url"]
         prompt = input("ip > ")
         user = Ip(prompt, api)
         user.IpBusca()
