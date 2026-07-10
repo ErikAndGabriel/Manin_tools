@@ -15,7 +15,8 @@ def painel_osint():
         break
         
       if str(ot) in ferramentas:
-        ferramentas[str(ot)]
+        clear()
+        ferramentas[str(ot)]()
           
       else:
         erro("somente numeros")
