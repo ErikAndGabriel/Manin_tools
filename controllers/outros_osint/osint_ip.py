@@ -1,4 +1,4 @@
-from ui.menu import menu_ip
+from ui.menus import menu_ip
 from ui.prompt import prompt_osint
 from ui.mensagens import erro, outro
 from modulos.osint.ip import Ip
