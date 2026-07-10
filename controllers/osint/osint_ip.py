@@ -4,6 +4,7 @@ from ui.mensagens import erro
 from modulos.osint.ip import Ip
 from core.clear import clear
 
+
 def painel_ip():
   while True:
     try:
