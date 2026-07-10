@@ -18,7 +18,22 @@ def format_ipwhois(data):
     print(f"Domínio    : {data.get('connection', {}).get('domain', 'N/A')}")
     print(f"Timezone   : {data.get('timezone', {}).get('id', 'N/A')}")
     print(f"UTC        : {data.get('timezone', {}).get('utc', 'N/A')}")
-
+    
+def format_ip_api(data):
+    print(f"IP         : {data.get('query', 'N/A')}")
+    print(f"Status     : {data.get('status', 'N/A')}")
+    print(f"País       : {data.get('country', 'N/A')}")
+    print(f"Código     : {data.get('countryCode', 'N/A')}")
+    print(f"Região     : {data.get('regionName', 'N/A')}")
+    print(f"Cidade     : {data.get('city', 'N/A')}")
+    print(f"CEP        : {data.get('zip', 'N/A')}")
+    print(f"Latitude   : {data.get('lat', 'N/A')}")
+    print(f"Longitude  : {data.get('lon', 'N/A')}")
+    print(f"Timezone   : {data.get('timezone', 'N/A')}")
+    print(f"ISP        : {data.get('isp', 'N/A')}")
+    print(f"Org        : {data.get('org', 'N/A')}")
+    print(f"ASN        : {data.get('as', 'N/A')}")
+    
 def format_ipapi(data):
     print(f"IP         : {data.get('ip', 'N/A')}")
     print(f"Rede       : {data.get('network', 'N/A')}")
