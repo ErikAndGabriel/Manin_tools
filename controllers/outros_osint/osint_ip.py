@@ -15,7 +15,7 @@ def painel_ip():
         break
         
       if str(ot) in ferramentas_ip:
-        api = ferramentas_ip[str(ot)]
+        api = ferramentas_ip[str(ot)]["url"]
         prompt = input("ip > ")
         user = Ip(prompt, api)
         user.IpBusca()
