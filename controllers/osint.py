@@ -3,6 +3,7 @@ from ui.prompt import prompt_osint
 from ui.mensagens import erro
 from config.ferramentas.osint import ferramentas 
 from core.clear import clear
+from controllers.outros_osint.osint_ip import painel_ip
 
 def painel_osint():
   while True:
@@ -13,7 +14,7 @@ def painel_osint():
         clear()
         break
         
-      elif str(ot) in ferramentas:
+      if str(ot) in ferramentas:
         ferramentas[str(ot)]
           
       else:
