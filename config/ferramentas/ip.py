@@ -1,10 +1,10 @@
 ferramentas_ip = {
   
-  "1": "ipwho.is",
-  "2": "ipapi.co",
-  "3": "ipinfo.io",
+  "1": "ipwhois",
+  "2": "ipapi",
+  "3": "ipinfo",
   "4": "freeipapi",
-  "5": "ip-api",
+  "5": "ip_api",
   "6": "ipdata",
   "7": "abstractapi"
   
