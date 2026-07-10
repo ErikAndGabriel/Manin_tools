@@ -10,15 +10,19 @@ class Ip:
     self.timeout = timeout("api")
     
   def IpBusca(self):
-    url = self.api_ip.format(self.ip)
-    resposta = requests.get(
-      url, 
-      timeout=self.timeout
-    )
-    
-    if resposta.status_code == 200:
-      for chave, valor in resposta.values():
-        print(f"{chave} : {valor}")
-      return True
-    else:
-      return "erro de conexão"
+    if self.api_ip in APIS_IP:
+      url = APIS_IP[self.api_ip]["url"].format(self.ip)
+      try:
+        resposta = requests.get(
+          url, 
+          timeout=self.timeout
+        )
+        if resposta.status_code == 200:
+          data = resposta.json()
+          for chave, valor in data.items():
+            print(f"{chave} : {valor}")
+            return True
+        else:
+          return "erro de conexão"
+      except Exception as e:
+        return f"erro: {e}"
