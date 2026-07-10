@@ -21,7 +21,7 @@ class Ip:
           data = resposta.json()
           for chave, valor in data.items():
             print(f"{chave} : {valor}")
-            return True
+          return True
         else:
           return "erro de conexão"
       except Exception as e:
