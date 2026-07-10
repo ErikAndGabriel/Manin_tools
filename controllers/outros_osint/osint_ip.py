@@ -9,7 +9,7 @@ def painel_ip():
   while True:
     try:
       print(menu_ip)
-      ot = int(input(prompt_ip))
+      ot = int(input(prompt_osint))
       if ot == 0:
         clear()
         break
