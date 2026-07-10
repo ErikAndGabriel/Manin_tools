@@ -15,7 +15,7 @@ def painel_ip():
         break
         
       if str(ot) in ferramentas_ip:
-        nome = ferramentas_ip[str(ot))
+        nome = ferramentas_ip[str(ot)]
         api = APIS_IP[nome]["url"]
         prompt = input("ip > ")
         user = Ip(prompt, api)
