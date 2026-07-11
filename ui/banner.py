@@ -47,7 +47,7 @@ banner_execucao1 = f"""{vernelho}
 ⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠛⠻⠿⣿⣿⣿⡿⠿⠿⠿⠿⠿⢿⣿⣿⠏⠀⠀⠀⠀
 """
-banner_execucao2 = f"""
+banner_execucao2 = f"""{vermelho}
 ⠀                         ⣀⣀⡀⠀⠀⣀⣀⣤⣤⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⠶⠞⠋⠉⣹⣿⣿⡿⠿⠿⠿⠿⢿⣿⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾⣿⣿⠋⠁⠀⠀⠀⣾⣿⣿⠏⠀⠀⠀⠀⠀⠀⠹⠟⠻⣿⣷⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -85,7 +85,7 @@ banner_execucao2 = f"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠋⠀⠀⠀
 """
 
-banner_execucao3 = f"""
+banner_execucao3 = f"""{vermelho}
           .                                                      .
         .n                   .                 .                  n.
   .   .dP                  dP                   9b                 9b.    .
@@ -98,12 +98,12 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
         ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
                         )b.  .dbo.dP'`v'`9b.odb.  .dX(
                       ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
-                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+                     dXXXXXXXXXXXP    .   `9XXXXXXXXXXXb
                     dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
-                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
-                     `'      9XXXXXX(   )XXXXXXP      `'
+                    9XXb.    XXXXXb.dX|Xb.dXXXXX     dXXP
+                     `       9XXXXXX(   )XXXXXXP      
                               XXXX X.`v'.X XXXX
                               XP^X'`b   d'`X^XX
                               X. 9  `   '  P )X                        
-                               `             '⠀
-"""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                               `             '
+                               ⠀"""⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
