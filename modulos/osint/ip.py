@@ -1,3 +1,4 @@
+from ui.banner import banner_execucao1 
 from config.APIS.api_ip import APIS_IP
 from core.config import timeout
 from modulos.osint.formatters.formato import FORMATADORES
@@ -22,6 +23,7 @@ class Ip:
         if resposta.status_code == 200:
           data = resposta.json()
           if self.api_ip in FORMATADORES:
+            print(banner_execucao1)
             FORMATADORES[self.api_ip](data)
             return True
           else:
