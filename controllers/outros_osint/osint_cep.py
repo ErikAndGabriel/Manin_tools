@@ -1,26 +1,38 @@
-import requests 
+from ui.menus import menu_ip
+from ui.prompt import prompt_osint
+from ui.mensagens import erro, outro
+from ui.color import azul
+from modulos.osint.cep import Cep
+from core.clear import clear
+from config.ferramentas.ip import ferramentas_ip
 from config.APIS.api_cep import APIS_CEP
-from core.config import timeout
-class Cep:
-  def __init__(self, cep, api):
-    
-    self.cep = cep
-    self.api = api
-    self.timeout = timeout("api")
-    
-  def CepBusca(self):
-    url = APIS_CEP[self.api]["url"]
+def painel_ip():
+  while True:
     try:
-      resposta = requests.get(
-        url,
-        timeout=self.timeout
-      )
-      if resposta.status_code == 200:
-        data = resposta.json()
-        for chave, valor in data.items():
-          print(f"{chave} : {valor}")
-        return True
+      print(menu_ip)
+      ot = int(input(prompt_osint))
+      if ot == 0:
+        clear()
+        break
+        
+      if str(ot) in ferramentas_ip:
+        api = ferramentas_ip[str(ot)]
+        try:
+          cep = int(input("cep > "))
+        except ValueError:
+          erro("somente numeros no cep")
+          clear()
+          continue 
+        user = Ip(cep, api)
+        user.CepBusca()
+        outro()
+        continue
+        
       else:
-        return "erro resposta"
+        erro("escolha invalida")
+        continue
+    except ValueError:
+      erro("somente numeros")
+      continue
     except Exception as e:
-      return f"erro: {e}"
+      erro(f"erro: {e}")
