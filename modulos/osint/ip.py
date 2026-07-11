@@ -22,7 +22,7 @@ class Ip:
         if resposta.status_code == 200:
           data = resposta.json()
           if self.api_ip in FORMATADORES:
-            FORMATADORES[self.api_api](data)
+            FORMATADORES[self.api_ip](data)
             return True
           else:
             return "erro de api invalida"  
