@@ -21,9 +21,11 @@ class Ip:
         )
         if resposta.status_code == 200:
           data = resposta.json()
-          for chave, valor in data.items():
-            print(f"{chave} : {valor}")
-          return True
+          if self.api_ip in FORMATADORES:
+            FORMATADORES[self.api_api]()
+            return True
+          else:
+            return "erro de api invalida"  
         else:
           return "erro de conexão"
       except Exception as e:
