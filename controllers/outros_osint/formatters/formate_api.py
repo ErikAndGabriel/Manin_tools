@@ -53,7 +53,7 @@ def format_ipapi(data):
     print(f"ASN        : {data.get('asn', 'N/A')}")
     print(f"Org        : {data.get('org', 'N/A')}")
 
-def format_ipwhois(data):
+def format_ipinfo(data):
     print(f"IP         : {data.get('ip', 'N/A')}")
     print(f"Hostname   : {data.get('hostname', 'N/A')}")
     print(f"País       : {data.get('country', 'N/A')}")
