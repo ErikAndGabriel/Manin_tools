@@ -1,5 +1,7 @@
 from config.APIS.api_ip import APIS_IP
 from core.config import timeout
+from modulos.osint.formatters.formato import FORMATADORES
+from modulos.osint.formatters.formate_api import format_ipwhois, format_ipapi, format_freeipapi, format_ip_api, format_ipinfo
 import json 
 import requests 
 
