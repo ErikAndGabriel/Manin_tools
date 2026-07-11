@@ -1,4 +1,4 @@
-from modulos.osint.format_api import format_ipwhois, format_ipapi, format_freeipapi,format_ip_api, format_ipinfo
+from modulos.osint.formatters.format_api import format_ipwhois, format_ipapi, format_freeipapi,format_ip_api, format_ipinfo
 FORMATADORES = {
     "ipwhois": format_ipwhois,
     "ipapi": format_ipapi,
