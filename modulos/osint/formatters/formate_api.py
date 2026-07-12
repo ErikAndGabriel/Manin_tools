@@ -1,5 +1,25 @@
 from ui.color import azul, amarelo, reset
 
+def format_cepaberto(data):
+    print(f"{azul}CEP          :{amarelo} {data.get('cep', 'N/A')}")
+    print(f"{azul}Logradouro   :{amarelo} {data.get('logradouro', 'N/A')}")
+    print(f"{azul}Complemento  :{amarelo} {data.get('complemento', 'N/A')}")
+    print(f"{azul}Bairro       :{amarelo} {data.get('bairro', 'N/A')}")
+    print(f"{azul}Cidade       :{amarelo} {data.get('cidade', {}).get('nome', 'N/A')}")
+    print(f"{azul}UF           :{amarelo} {data.get('estado', {}).get('sigla', 'N/A')}")
+    print(f"{azul}DDD          :{amarelo} {data.get('cidade', {}).get('ddd', 'N/A')}")
+    print(f"{azul}Latitude     :{amarelo} {data.get('latitude', 'N/A')}")
+    print(f"{azul}Longitude    :{amarelo} {data.get('longitude', 'N/A')}")
+    print(f"{azul}Altitude     :{amarelo} {data.get('altitude', 'N/A')}")
+    
+def format_apicep(data):
+    print(f"{azul}Status       :{amarelo} {data.get('status', 'N/A')}")
+    print(f"{azul}CEP          :{amarelo} {data.get('code', 'N/A')}")
+    print(f"{azul}Logradouro   :{amarelo} {data.get('address', 'N/A')}")
+    print(f"{azul}Bairro       :{amarelo} {data.get('district', 'N/A')}")
+    print(f"{azul}Cidade       :{amarelo} {data.get('city', 'N/A')}")
+    print(f"{azul}UF           :{amarelo} {data.get('state', 'N/A')}")
+    
 def format_brasilapi(data):
     print(f"{azul}CEP          :{amarelo} {data.get('cep', 'N/A')}")
     print(f"{azul}Logradouro   :{amarelo} {data.get('street', 'N/A')}")
