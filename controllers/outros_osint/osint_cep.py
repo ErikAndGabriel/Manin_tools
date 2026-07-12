@@ -15,7 +15,7 @@ def painel_ip():
         clear()
         break
         
-      if str(ot) in ferramentas_ip:
+      if str(ot) in ferramentas_cep:
         api = ferramentas_cep[str(ot)]
         try:
           cep = int(input("cep > "))
