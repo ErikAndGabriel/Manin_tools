@@ -9,3 +9,10 @@ ferramentas_ip = {
   "7": "abstractapi"
   
 }
+
+ferramentas_cep = {
+  "1": "viacep",
+  "2": "brasilapi",
+  "3": "apicep",
+  "4": "api_cep"
+}
