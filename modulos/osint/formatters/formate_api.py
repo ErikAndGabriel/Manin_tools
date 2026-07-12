@@ -1,6 +1,28 @@
 from ui.color import azul, amarelo, reset
 
-
+def format_brasilapi(data):
+    print(f"{azul}CEP          :{amarelo} {data.get('cep', 'N/A')}")
+    print(f"{azul}Logradouro   :{amarelo} {data.get('street', 'N/A')}")
+    print(f"{azul}Bairro       :{amarelo} {data.get('neighborhood', 'N/A')}")
+    print(f"{azul}Cidade       :{amarelo} {data.get('city', 'N/A')}")
+    print(f"{azul}Estado (UF)  :{amarelo} {data.get('state', 'N/A')}")
+    print(f"{azul}Provedor     :{amarelo} {data.get('service', 'N/A')}")
+    
+def format_viacep(data):
+    print(f"{azul}CEP          :{amarelo} {data.get('cep', 'N/A')}")
+    print(f"{azul}Logradouro   :{amarelo} {data.get('logradouro', 'N/A')}")
+    print(f"{azul}Complemento  :{amarelo} {data.get('complemento', 'N/A')}")
+    print(f"{azul}Unidade      :{amarelo} {data.get('unidade', 'N/A')}")
+    print(f"{azul}Bairro       :{amarelo} {data.get('bairro', 'N/A')}")
+    print(f"{azul}Cidade       :{amarelo} {data.get('localidade', 'N/A')}")
+    print(f"{azul}UF           :{amarelo} {data.get('uf', 'N/A')}")
+    print(f"{azul}Estado       :{amarelo} {data.get('estado', 'N/A')}")
+    print(f"{azul}Região       :{amarelo} {data.get('regiao', 'N/A')}")
+    print(f"{azul}IBGE         :{amarelo} {data.get('ibge', 'N/A')}")
+    print(f"{azul}GIA          :{amarelo} {data.get('gia', 'N/A')}")
+    print(f"{azul}DDD          :{amarelo} {data.get('ddd', 'N/A')}")
+    print(f"{azul}SIAFI        :{amarelo} {data.get('siafi', 'N/A')}") 
+    
 def format_ipwhois(data):
     print(f"{azul}Sucesso      :{amarelo} {data.get('success', 'N/A')}")
     print(f"{azul}Mensagem     :{amarelo} {data.get('message', 'N/A')}")
