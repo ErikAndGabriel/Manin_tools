@@ -1,3 +1,10 @@
+"""
+      atenção esse módulo foi fornecido por
+      @akalinpapo
+      ass: erik
+      
+"""
+
 import hashlib
 import re
 import random
