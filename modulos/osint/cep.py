@@ -10,7 +10,7 @@ class Cep:
     self.timeout = timeout("api")
     
   def CepBusca(self):
-    url = APIS_CEP[self.api]["url"].format(self.ip)
+    url = APIS_CEP[self.api]["url"].format(self.cep)
     try:
       resposta = requests.get(
         url,
