@@ -11,5 +11,5 @@ FORMATADORES_CEP = {
     "viacep": format_viacep,
     "brasilapi": format_brasilapi,
     "apicep": format_apicep,
-    "api_cep": format_api_cep
+    "api_cep": format_apicep
 }
