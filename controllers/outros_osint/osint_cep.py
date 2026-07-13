@@ -6,7 +6,7 @@ from modulos.osint.cep import Cep
 from core.clear import clear
 from config.ferramentas.ip import ferramentas_cep
 from config.APIS.api_cep import APIS_CEP
-def painel_ip():
+def painel_cep():
   while True:
     try:
       print(menu_cep)
