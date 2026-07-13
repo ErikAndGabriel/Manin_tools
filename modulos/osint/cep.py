@@ -1,6 +1,7 @@
 import requests 
 from config.APIS.api_cep import APIS_CEP
 from core.config import timeout
+from modulos.osint.formatters.formato import FORMATADORES_CEP
 class Cep:
   def __init__(self, cep, api):
     
@@ -17,8 +18,8 @@ class Cep:
       )
       if resposta.status_code == 200:
         data = resposta.json()
-        for chave, valor in data.items():
-          print(f"{chave} : {valor}")
+        if self.api in FORMATADORES_CEP:
+          FORMATADORES_CEP[self.api](data)
         return True
       else:
         return "erro resposta"
