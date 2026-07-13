@@ -505,6 +505,3 @@ class SisregConsulta:
 
     def get_dados(self):
         return self.dados
-
-if __name__ == "__main__":
-    consulta = SisregConsulta("SEU_CNS_AQUI")
