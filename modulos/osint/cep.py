@@ -1,6 +1,8 @@
 import requests 
 from config.APIS.api_cep import APIS_CEP
 from core.config import timeout
+from ui.banner import banner_execucao1
+from core.clear import clear
 from modulos.osint.formatters.formato import FORMATADORES_CEP
 class Cep:
   def __init__(self, cep, api):
@@ -19,6 +21,8 @@ class Cep:
       if resposta.status_code == 200:
         data = resposta.json()
         if self.api in FORMATADORES_CEP:
+          clear()
+          print(banner_execucao1)
           FORMATADORES_CEP[self.api](data)
         return True
       else:
