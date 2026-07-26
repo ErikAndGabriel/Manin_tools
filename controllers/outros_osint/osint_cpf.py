@@ -6,7 +6,7 @@ def painel_cpf():
   while True:
     try:
       print(menu_osint)
-      cpf = input(prompt_osint)
+      cpf = input("cpf > ")
       usuario = SisregConsulta(cpf)
     except Exception as e:
       erro(f"erro: {e}")
