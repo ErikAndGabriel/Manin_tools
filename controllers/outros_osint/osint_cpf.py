@@ -1,13 +1,22 @@
 from modulos.osint.cpf import SisregConsulta
 from ui.menus import menu_osint 
 from ui.prompt import prompt_osint 
-from ui.mensagens import erro
+from ui.mensagens import erro, outros
+from ui.banner import banner_execucao1 
+from core.clear import clear
 def painel_cpf():
   while True:
     try:
       print(menu_osint)
-      cpf = input("cpf > ")
+      cpf = input("[0] sair or cpf > ")
+      if cpf == "0":
+        clear()
+        break
+      clear()
+      print(banner_execucao1)
       usuario = SisregConsulta(cpf)
+      outros()
+      continue
     except Exception as e:
       erro(f"erro: {e}")
       continue
