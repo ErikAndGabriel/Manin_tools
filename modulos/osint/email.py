@@ -2,6 +2,7 @@ import os
 from ui.banner import banner_execucao1 
 def Email(email):
   try:
+    clear()
     print(banner_execucao1)
     os.system(f"holehe {email}")
   except Exception as e:
