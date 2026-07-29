@@ -7,7 +7,11 @@ def painel_email():
   while True:
     try:
       print(menu_osint)
-      e-mail = input("e-mail > ")
-      user = Email(e-mail)
+      email = input("[0] sair or e-mail > ")
+      if escolha == "0":
+        clear()
+        break
+      user = Email(email)
     except Exception as e:
       erro(f"erro: {e}")
+      continue
