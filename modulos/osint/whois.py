@@ -1,5 +1,4 @@
 import whois
-from ui.menus import menu_osint 
 from ui.banner import banner_execucao1 
 from core.clear import clear 
 
@@ -14,6 +13,6 @@ class BuscarWhois:
       buscar = whois.whois(self.servico)
       for chave, valor in buscar.items():
         print(f"{chave} : {valor}")
-        return True
+      return True
     except Exception as e:
       return f"erro {e}"
