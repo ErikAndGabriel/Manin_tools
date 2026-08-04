@@ -1,7 +1,7 @@
 from modulos.osint.cpf import SisregConsulta
 from ui.menus import menu_osint 
 from ui.prompt import prompt_osint 
-from ui.mensagens import erro, outros
+from ui.mensagens import erro, outro
 from ui.banner import banner_execucao1 
 from core.clear import clear
 def painel_cpf():
