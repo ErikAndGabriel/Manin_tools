@@ -1,10 +1,12 @@
-MainTools
+# MainTools
 
-MainTools é uma toolkit desenvolvida em Python que reúne diversas ferramentas em uma única interface de terminal. O projeto foi criado com foco em estudos, organização e desenvolvimento de utilitários relacionados à segurança da informação, redes, desenvolvimento e automação.
+MainTools é uma toolkit desenvolvida em Python que reúne diversas ferramentas em uma única interface de terminal.
+
+O projeto foi criado para facilitar estudos, desenvolvimento e organização de ferramentas relacionadas à segurança da informação, redes, desenvolvimento e automação.
 
 ---
 
-Recursos
+## Recursos
 
 - OSINT
 - Ferramentas Web
@@ -18,37 +20,55 @@ Recursos
 
 ---
 
-Capturas de Tela
+## Capturas de Tela
 
-Menu Principal
+### Menu Principal
 
-"Menu Principal" (FOTOS/menu_inicial.jpg)
+![Menu Principal](FOTOS/menu_inicial.jpg)
 
-Exemplo
+### Exemplo
 
-"Exemplo" (FOTOS/exemplo.jpg)
+![Exemplo](FOTOS/exemplo.jpg)
 
-Exemplo de Uso
+### Exemplo de Uso
 
-"Exemplo de Uso" (FOTOS/exemplo_uso.jpg)
+![Exemplo de Uso](FOTOS/exemplo_uso.jpg)
 
 ---
 
-Instalação
+## Instalação
 
+Clone o repositório:
+
+```bash
 git clone https://github.com/SEU-USUARIO/MainTools.git
+```
 
+Entre na pasta do projeto:
+
+```bash
 cd MainTools
+```
 
+Instale as dependências:
+
+```bash
 pip install -r requirements.txt
+```
 
+Execute o programa:
+
+```bash
 python MainTools.py
+```
 
 ---
 
-Estrutura
+## Estrutura do Projeto
 
+```text
 MainTools/
+│
 ├── config/
 ├── controllers/
 ├── core/
@@ -56,17 +76,38 @@ MainTools/
 ├── modulos/
 ├── ui/
 ├── FOTOS/
+│   ├── menu_inicial.jpg
+│   ├── exemplo.jpg
+│   └── exemplo_uso.jpg
 ├── MainTools.py
-└── requirements.txt
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-Aviso
+## Requisitos
 
-Este projeto foi desenvolvido para fins educacionais e testes autorizados. O usuário é responsável pela forma como utiliza a ferramenta.
+- Python 3.10 ou superior
+- Sistema Linux, Termux ou Windows
+- Dependências presentes em `requirements.txt`
 
 ---
 
-Licença
+## Objetivo
 
-Distribuído sob a licença MIT.
+O MainTools busca reunir diversas ferramentas em um único projeto, oferecendo uma interface simples e organizada para facilitar estudos e desenvolvimento de novas funcionalidades.
+
+---
+
+## Aviso
+
+Este projeto foi desenvolvido exclusivamente para fins educacionais e testes autorizados.
+
+O autor não se responsabiliza pelo uso inadequado da ferramenta.
+
+---
+
+## Licença
+
+Este projeto está distribuído sob a licença MIT.
