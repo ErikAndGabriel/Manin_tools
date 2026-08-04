@@ -8,7 +8,7 @@ def painel_email():
     try:
       print(menu_osint)
       email = input("[0] sair or e-mail > ")
-      if escolha == "0":
+      if email == "0":
         clear()
         break
       user = Email(email)
