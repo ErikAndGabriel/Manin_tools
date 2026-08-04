@@ -24,15 +24,15 @@ O projeto foi criado para facilitar estudos, desenvolvimento e organização de 
 
 ### Menu Principal
 
-![Menu Principal](FOTOS/menu_inicial.jpg)
+![Menu Principal](FOTOS/Menu_inicial.jpg)
 
 ### Exemplo
 
-![Exemplo](FOTOS/exemplo.jpg)
+![Exemplo](FOTOS/Exemplo.jpg)
 
 ### Exemplo de Uso
 
-![Exemplo de Uso](FOTOS/exemplo_uso.jpg)
+![Exemplo de Uso](FOTOS/Exemplo_uso.jpg)
 
 ---
 
