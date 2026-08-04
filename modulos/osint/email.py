@@ -1,5 +1,6 @@
 import os 
 from ui.banner import banner_execucao1 
+from core.clear import clear
 def Email(email):
   try:
     clear()
