@@ -12,7 +12,7 @@ def painel_email():
         clear()
         break
       user = Email(email)
-      outros()
+      outro()
       continue
     except Exception as e:
       erro(f"erro: {e}")
