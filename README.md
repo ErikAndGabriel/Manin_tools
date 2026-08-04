@@ -1,18 +1,72 @@
-MainTools 
+MainTools
 
-Uma toolkit desenvolvida em Python que reúne diversas ferramentas para estudos, automação, segurança da informação, redes e desenvolvimento.
+MainTools é uma toolkit desenvolvida em Python que reúne diversas ferramentas em uma única interface de terminal. O projeto foi criado com foco em estudos, organização e desenvolvimento de utilitários relacionados à segurança da informação, redes, desenvolvimento e automação.
 
-O objetivo do projeto é centralizar diferentes utilitários em uma interface simples de terminal, facilitando o aprendizado e a organização das ferramentas.
+---
 
-Funcionalidades OSINT Ferramentas Web Google Dorks WHOIS Consulta de IP Consulta de CEP Enumeração de Diretórios Utilitários de Rede Outras ferramentas em desenvolvimento Imagens Menu Principal 
+Recursos
 
-Exemplo 
+- OSINT
+- Ferramentas Web
+- Google Dorks
+- WHOIS
+- Consulta de IP
+- Consulta de CEP
+- Enumeração de Diretórios
+- Ferramentas de Rede
+- Utilitários diversos
 
-Instalação git clone https://github.com/SEU-USUARIO/MainTools.git cd MainTools pip install -r requirements.txt python MainTools.py Estrutura MainTools/ ├── config/ ├── controllers/ ├── core/ ├── data/ ├── modulos/ ├── ui/ ├── MainTools.py └── requirements.txt Aviso 
+---
 
-Este projeto foi desenvolvido para fins de estudo, pesquisa e testes autorizados. O uso da ferramenta é de responsabilidade do usuário.
+Capturas de Tela
 
-Licença 
+Menu Principal
 
-Este projeto está licenciado sob a licença MIT.
+"Menu Principal" (FOTOS/menu_inicial.jpg)
 
+Exemplo
+
+"Exemplo" (FOTOS/exemplo.jpg)
+
+Exemplo de Uso
+
+"Exemplo de Uso" (FOTOS/exemplo_uso.jpg)
+
+---
+
+Instalação
+
+git clone https://github.com/SEU-USUARIO/MainTools.git
+
+cd MainTools
+
+pip install -r requirements.txt
+
+python MainTools.py
+
+---
+
+Estrutura
+
+MainTools/
+├── config/
+├── controllers/
+├── core/
+├── data/
+├── modulos/
+├── ui/
+├── FOTOS/
+├── MainTools.py
+└── requirements.txt
+
+---
+
+Aviso
+
+Este projeto foi desenvolvido para fins educacionais e testes autorizados. O usuário é responsável pela forma como utiliza a ferramenta.
+
+---
+
+Licença
+
+Distribuído sob a licença MIT.
