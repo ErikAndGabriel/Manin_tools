@@ -1,4 +1,5 @@
 import os
+from core.clear import clear
 from ui.mensagens import erro, outro 
 from ui.menus import menu_osint 
 from ui.prompt import prompt_osint
