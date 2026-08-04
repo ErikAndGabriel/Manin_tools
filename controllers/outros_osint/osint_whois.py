@@ -15,3 +15,7 @@ def painel_whois():
       user.Buscar()
       outro()
       continue 
+    except Exception as e:
+      print(f"erro: {e}")
+      outro
+      continue
