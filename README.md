@@ -41,13 +41,13 @@ O projeto foi criado para facilitar estudos, desenvolvimento e organização de 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/MainTools.git
+git clone https://github.com/ErikAndGabriel/Manin_tools 
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd MainTools
+cd Manin_tools
 ```
 
 Instale as dependências:
@@ -89,7 +89,7 @@ MainTools/
 ## Requisitos
 
 - Python 3.10 ou superior
-- Sistema Linux, Termux ou Windows
+- Sistema Linux ou Termux
 - Dependências presentes em `requirements.txt`
 
 ---
