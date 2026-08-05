@@ -13,7 +13,7 @@ APIS_TELEGRAM = {
     "GetChat": "https://api.telegram.org/bot{}/getChat?chat_id={}",
     "getChatAdministrators": "https://api.telegram.org/bot{}/getChatAdministrators?chat_id={}",
     "getChatMember": "https://api.telegram.org/bot{}/getChatMember?chat_id={}&user_id={}",
-    "getChatMemberCount": "https://api.telegram.org/bot{}/getChatMemberCount?chat_id={}
+    "getChatMemberCount": "https://api.telegram.org/bot{}/getChatMemberCount?chat_id={}"
   }
 }
 
