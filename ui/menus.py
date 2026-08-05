@@ -43,7 +43,7 @@ HOME
 │   ├── [02] EMAIL (Holehe)
 │   ├── [03] CPF
 │   ├── [04] WHOIS
-│   ├── [05] GOOGLE DORK
+│   ├── [05] TELEGRAM 
 │   ├── [06] NOME
 │   ├── [07] USERNAME
 │   ├── [08] CNPJ
@@ -66,7 +66,7 @@ HOME
 │   ├── [20] CEP (API)
 │   ├── [21] RG
 │   ├── [22] PHONE
-│   ├── [23] EMAIL (API)
+│   ├── [23] DISCORD 
 │   └── [00] VOLTAR
 """
 menu_ip = f"""{reset}
@@ -86,8 +86,8 @@ HOME
 │   ├── [02] EMAIL (Holehe)
 │   ├── [03] CPF
 │   ├── [04] WHOIS
-│   ├── [05] GOOGLE DORK
-│   ├── [06] NOME
+│   ├── [05] TELEGRAM
+|   ├── [06] NOME
 │   ├── [07] USERNAME
 │   ├── [08] CNPJ
 │   ├── [09] PHONE (API)
@@ -104,7 +104,7 @@ HOME
 │   ├── [20] CEP (API)
 │   ├── [21] RG
 │   ├── [22] PHONE
-│   ├── [23] EMAIL (API)
+│   ├── [23] DISCORD
 │   └── [00] VOLTAR
 """
 menu_osint = f"""{reset}
@@ -116,7 +116,7 @@ HOME
 │   ├── {azul}[02]{reset} EMAIL (Holehe)
 │   ├── {azul}[03]{reset} CPF
 │   ├── {azul}[04]{reset} WHOIS
-│   ├── {azul}[05]{reset} GOOGLE DORK
+│   ├── {azul}[05]{reset} TELEGRAM 
 │   ├── {azul}[06]{reset} NOME
 │   ├── {azul}[07]{reset} USERNAME
 │   ├── {azul}[08]{reset} CNPJ
@@ -134,7 +134,7 @@ HOME
 │   ├── {azul}[20]{reset} CEP (API)
 │   ├── {azul}[21]{reset} RG
 │   ├── {azul}[22]{reset} PHONE
-│   ├── {azul}[23]{reset} EMAIL (API)
+│   ├── {azul}[23]{reset} DISCORD 
 │   └── {azul}[00]{reset} VOLTAR
 ├── [03] NETWORK
 ├── [04] INSTALL
@@ -239,59 +239,4 @@ HOME
 ├── [08] LOOKUP
 ├── [09] DOX
 └── [00] EXIT
-"""
-
-menu_google_dork = f"""{reset}
-HOME
-│
-├─
-├── [02] OSINT
-│   ├── [01] IP INFO
-│   ├── [02] EMAIL (Holehe)
-│   ├── [03] CPF
-│   ├── [04] WHOIS
-│   ├── [05] GOOGLE DORK
-│   │   ├── {azul}[01]{reset} ARQUIVOS
-│   │   ├── {azul}[02]{reset} DIRETÓRIOS (INDEX OF)
-│   │   ├── {azul}[03]{reset} LOGIN PAGES
-│   │   ├── {azul}[04]{reset} PAINÉIS ADMIN
-│   │   ├── {azul}[05]{reset} REPOSITÓRIOS
-│   │   ├── {azul}[06]{reset} BACKUPS
-│   │   ├── {azul}[07]{reset} CONFIGURAÇÕES
-│   │   ├── {azul}[08]{reset} DOCUMENTAÇÃO
-│   │   ├── {azul}[09]{reset} METADADOS
-│   │   ├── {azul}[10]{reset} DNS / SUBDOMÍNIOS
-│   │   ├── {azul}[11]{reset} SERVIDORES WEB
-│   │   ├── {azul}[12]{reset} APIS
-│   │   ├── {azul}[13]{reset} LOGS
-│   │   ├── {azul}[14]{reset} BANCOS DE DADOS
-│   │   ├── {azul}[15]{reset} CÂMERAS
-│   │   ├── {azul}[16]{reset} DISPOSITIVOS IoT
-│   │   ├── {azul}[17]{reset} VULNERABILIDADES
-│   │   ├── {azul}[18]{reset} ERROS EXPOSTOS
-│   │   ├── {azul}[19]{reset} NUVEM (S3, Azure, GCS)
-│   │   ├── {azul}[20]{reset} CÓDIGO-FONTE
-│   │   ├── {azul}[21]{reset} CERTIFICADOS
-│   │   ├── {azul}[22]{reset} CACHE
-│   │   ├── {azul}[23]{reset} PERSONALIZAR
-│   │   └── {azul}[00]{reset} VOLTAR
-│   ├── [06] NOME
-│   ├── [07] USERNAME
-│   ├── [08] CNPJ
-│   ├── [09] PHONE (API)
-│   ├── [10] CEP
-│   ├── [11] DDD / DDI
-│   ├── [12] NOME PAI
-│   ├── [13] GITHUB
-│   ├── [14] INSTAGRAM
-│   ├── [15] NOME MÃE
-│   ├── [16] DNS
-│   ├── [17] DNS
-│   ├── [18] CNS
-│   ├── [19] REDDIT
-│   ├── [20] CEP (API)
-│   ├── [21] RG
-│   ├── [22] PHONE
-│   ├── [23] EMAIL (API)
-│   └── [00] VOLTAR
 """
