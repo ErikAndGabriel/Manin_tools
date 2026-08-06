@@ -1,5 +1,58 @@
 from ui.color import azul, amarelo, reset
 
+def format_telegram_info_bot(data):
+    bot = data.get("GetMe", {}).get("result", {})
+    print(f"{azul}ID                     :{amarelo} {bot.get('id', 'N/A')}")
+    print(f"{azul}É Bot                  :{amarelo} {bot.get('is_bot', 'N/A')}")
+    print(f"{azul}Nome                   :{amarelo} {bot.get('first_name', 'N/A')}")
+    print(f"{azul}Sobrenome              :{amarelo} {bot.get('last_name', 'N/A')}")
+    print(f"{azul}Username               :{amarelo} {bot.get('username', 'N/A')}")
+    print(f"{azul}Idioma                 :{amarelo} {bot.get('language_code', 'N/A')}")
+    print(f"{azul}Pode entrar em grupos  :{amarelo} {bot.get('can_join_groups', 'N/A')}")
+    print(f"{azul}Lê todas mensagens     :{amarelo} {bot.get('can_read_all_group_messages', 'N/A')}")
+    print(f"{azul}Suporta Inline         :{amarelo} {bot.get('supports_inline_queries', 'N/A')}")
+    print(f"{azul}Business              :{amarelo} {bot.get('can_connect_to_business', 'N/A')}")
+    print(f"{azul}Web App               :{amarelo} {bot.get('has_main_web_app', 'N/A')}")
+    print(f"{azul}Premium               :{amarelo} {bot.get('is_premium', 'N/A')}")
+    webhook = data.get("getWebhookInfo", {}).get("result", {})
+    print(f"{azul}URL                    :{amarelo} {webhook.get('url', 'N/A')}")
+    print(f"{azul}Certificado            :{amarelo} {webhook.get('has_custom_certificate', 'N/A')}")
+    print(f"{azul}Pendentes              :{amarelo} {webhook.get('pending_update_count', 'N/A')}")
+    print(f"{azul}IP                     :{amarelo} {webhook.get('ip_address', 'N/A')}")
+    print(f"{azul}Último erro            :{amarelo} {webhook.get('last_error_message', 'N/A')}")
+    print(f"{azul}Data último erro       :{amarelo} {webhook.get('last_error_date', 'N/A')}")
+    print(f"{azul}Máx. conexões          :{amarelo} {webhook.get('max_connections', 'N/A')}")
+    print(f"{azul}Atualizações           :{amarelo} {webhook.get('allowed_updates', 'N/A')}")
+    nome = data.get("getMyName", {}).get("result", {})
+    print(f"{azul}Nome                   :{amarelo} {nome.get('name', 'N/A')}")
+    descricao = data.get("getMyDescription", {}).get("result", {})
+    print(f"{azul}Descrição              :{amarelo} {descricao.get('description', 'N/A')}")
+    curta = data.get("getMyShortDescription", {}).get("result", {})
+    print(f"{azul}Descrição Curta        :{amarelo} {curta.get('short_description', 'N/A')}")
+    comandos = data.get("getMyCommands", {}).get("result", [])
+    if comandos:
+        for i, cmd in enumerate(comandos, 1):
+            print(f"{azul}Comando {i}            :{amarelo} {cmd.get('command', 'N/A')}")
+            print(f"{azul}Descrição              :{amarelo} {cmd.get('description', 'N/A')}")
+    else:
+        print("sem comandos")
+    updates = data.get("getUpdates", {}).get("result", [])
+    if updates:
+        for i, update in enumerate(updates, 1):
+            print(f"{azul}Update ID              :{amarelo} {update.get('update_id', 'N/A')}")
+            mensagem = update.get("message", {})
+            if mensagem:
+                print(f"{azul}Mensagem ID            :{amarelo} {mensagem.get('message_id', 'N/A')}")
+                print(f"{azul}Texto                  :{amarelo} {mensagem.get('text', 'N/A')}")
+                usuario = mensagem.get("from", {})
+                print(f"{azul}Usuário                :{amarelo} {usuario.get('first_name', 'N/A')}")
+                print(f"{azul}Username               :{amarelo} {usuario.get('username', 'N/A')}")
+                print(f"{azul}ID Usuário             :{amarelo} {usuario.get('id', 'N/A')}")
+                chat = mensagem.get("chat", {})
+                print(f"{azul}Chat ID                :{amarelo} {chat.get('id', 'N/A')}")
+                print(f"{azul}Tipo Chat              :{amarelo} {chat.get('type', 'N/A')}")
+    else:
+        print(f"{amarelo}Nenhuma atualização encontrada.")
 def format_cepaberto(data):
     print(f"{azul}CEP          :{amarelo} {data.get('cep', 'N/A')}")
     print(f"{azul}Logradouro   :{amarelo} {data.get('logradouro', 'N/A')}")
