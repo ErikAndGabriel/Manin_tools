@@ -6,7 +6,7 @@ from core.clear import clear
 import requests 
 import json
 
-class BotTelegramInfo:
+class ChatTelegramInfo:
   def __init__(self, token_bot, chat_id):
     self.token_bot = token_bot
     self.chat_id = chat_id
