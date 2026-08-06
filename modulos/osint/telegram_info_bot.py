@@ -1,5 +1,5 @@
 from config.APIS.api_telegram import APIS_TELEGRAM
-from modulos.osint.formatters.formate_api import 
+from modulos.osint.formatters.formate_api import format_telegram_info_bot
 import requests 
 import json
 
@@ -21,4 +21,4 @@ class BotTelegramInfo:
           "ok": False,
           "erro": str(e)
         }
-    
+    format_telegram_info_bot(data)
