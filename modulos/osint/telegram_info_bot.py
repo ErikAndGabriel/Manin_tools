@@ -1,24 +1,35 @@
 from config.APIS.api_telegram import APIS_TELEGRAM
 from modulos.osint.formatters.formate_api import format_telegram_info_bot
+from ui.banner import banner_execucao1 
+from core.config import timeout
+from core.clear import clear 
 import requests 
 import json
 
 class BotTelegramInfo:
   def __init__(self, token_bot):
     self.token_bot = token_bot
-
+    self.timeout = timeout("api")
   def Buscar(self):
     data = {}
     for nome, url in APIS_TELEGRAM["info_bot"].items():
       try:
         resposta = requests.get(
-          url.format(self.token_bot)
+          url.format(self.token_bot), 
+          timeout=self.timeout 
         )
-        data[nome] = resposta.json()
-        
+        if resposta.status_code == 200:
+          data[nome] = resposta.json()
+        else:
+          data[nome] = {
+            "ok": False,
+            "erro": str(resposta.status_code)
+          }
       except Exception as e:
         data[nome] = {
           "ok": False,
           "erro": str(e)
         }
+    clear()
+    print(banner_execucao1)
     format_telegram_info_bot(data)
