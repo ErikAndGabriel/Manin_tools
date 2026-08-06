@@ -33,4 +33,4 @@ class ChatTelegramInfo:
         }
     clear()
     print(banner_execucao1)
-    format_telegram_info_bot(data)
+    format_telegram_info_chat(data)
