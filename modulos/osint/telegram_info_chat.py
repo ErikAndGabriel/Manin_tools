@@ -16,7 +16,7 @@ class ChatTelegramInfo:
     for nome, url in APIS_TELEGRAM["info_chat"].items():
       try:
         resposta = requests.get(
-          url.format(self.token_bot).format(self.chat_id), 
+          url.format(self.token_bot, self.chat_id), 
           timeout=self.timeout 
         )
         if resposta.status_code == 200:
