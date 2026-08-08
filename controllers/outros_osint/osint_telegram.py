@@ -8,7 +8,6 @@ from modulos.osint.telegram_info_chat import ChatTelegramInfo
 def painel_telegram():
   while True:
     try:
-      clear()
       print(menu_telegram) 
       escolha = int(input(prompt_telegram))
       if escolha == 1:
