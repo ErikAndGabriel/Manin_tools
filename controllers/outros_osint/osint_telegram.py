@@ -16,6 +16,8 @@ def painel_telegram():
         user = ChatTelegramInfo(bot_token, chat_id)
         user.Buscar()
         outro()
+      elif escolha == 0:
+        break
         
       elif escolha == 2:
         bot_token = input(f"bot token {prompt_telegram}")
