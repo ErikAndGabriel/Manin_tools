@@ -12,14 +12,14 @@ def painel_telegram():
       print(menu_telegram) 
       escolha = int(input(prompt_telegram))
       if escolha == 1:
-        chat_id = input("chat id", prompt_telegram)
-        bot_token = input("bot token", prompt_telegram)
+        chat_id = input(f"chat id {prompt_telegram}")
+        bot_token = input(f"bot token {prompt_telegram}")
         user = ChatTelegramInfo(bot_token, chat_id)
         user.Buscar()
         outro()
         
       elif escolha == 2:
-        bot_token = input("bot token", prompt_telegram)
+        bot_token = input(f"bot token {prompt_telegram}")
         user = BotTelegramInfo(bot_token)
         user.buscar()
         outro()
