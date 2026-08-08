@@ -21,7 +21,7 @@ def painel_telegram():
       elif escolha == 2:
         bot_token = input(f"bot token {prompt_telegram}")
         user = BotTelegramInfo(bot_token)
-        user.buscar()
+        user.Buscar()
         outro()
         
       else:
