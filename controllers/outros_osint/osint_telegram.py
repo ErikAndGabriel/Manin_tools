@@ -17,6 +17,7 @@ def painel_telegram():
         user.Buscar()
         outro()
       elif escolha == 0:
+        clear()
         break
         
       elif escolha == 2:
