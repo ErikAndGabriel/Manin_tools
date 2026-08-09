@@ -4,12 +4,13 @@ from controllers.outros_osint.osint_cpf import painel_cpf
 from controllers.outros_osint.osint_email import painel_email
 from controllers.outros_osint.osint_whois import painel_whois
 from controllers.outros_osint.osint_telegram import painel_telegram
-
+from controllers.outros_osint.osint_nome import painel_nome
 ferramentas = {
   "1": painel_ip,
   "2": painel_email,
   "3": painel_cpf,
   "4": painel_whois,
   "5": painel_telegram,
+  "6": painel_nome,
   "10": painel_cep
 }
