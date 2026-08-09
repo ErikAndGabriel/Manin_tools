@@ -7,6 +7,8 @@ def timeout(tempo=5):
     return 10
   elif tempo == "resposta":
     return 20
+  elif tempo == "Google":
+    return 2
 
 def headers(tipo="aleatorio"):
   data = carregar_json("config/user_agents.json")
