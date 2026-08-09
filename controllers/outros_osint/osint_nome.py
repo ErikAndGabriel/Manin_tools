@@ -8,9 +8,9 @@ def painel_nome():
   while True:
     try:
       print(menu_osint)
-      nome = int(input(f"nome or 0 {prompt_osint}"))
+      nome = input(f"nome or 0 {prompt_osint}")
       try:
-        quantidade = input(f"quantidade or 0 {prompt_osint}")
+        quantidade = int(input(f"quantidade or 0 {prompt_osint}"))
       except ValueError:
         erro("somente numeros")
         outro()
