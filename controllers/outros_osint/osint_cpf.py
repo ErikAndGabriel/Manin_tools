@@ -15,7 +15,7 @@ def painel_cpf():
       clear()
       print(banner_execucao1)
       usuario = SisregConsulta(cpf)
-      outros()
+      outro()
       continue
     except Exception as e:
       erro(f"erro: {e}")
