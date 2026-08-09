@@ -9,14 +9,14 @@ def painel_nome():
     try:
       print(menu_osint)
       nome = input(f"nome or 0 {prompt_osint}")
+      if nome == "0":
+        clear()
+        break 
       try:
-        quantidade = int(input(f"quantidade or 0 {prompt_osint}"))
+        quantidade = int(input(f"quantidade {prompt_osint}"))
       except ValueError:
         erro("somente numeros")
         outro()
-      if nome == "0":
-        clear()
-        break
         
       user = NomeBusca(nome, quantidade)
       user.Buscar()
