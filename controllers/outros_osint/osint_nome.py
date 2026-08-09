@@ -8,7 +8,7 @@ def painel_nome():
   while True:
     try:
       print(menu_osint)
-      nome = input(f"nome or 0 {painel_osint}")
+      nome = input(f"nome or 0 {menu_osint}")
       if nome == "0":
         clear()
         break
