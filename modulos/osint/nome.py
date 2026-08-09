@@ -26,8 +26,8 @@ class NomeBusca:
           print(f"descrição : {resultado.description}")
           self.enumerar["sucesso"] += 1
       print(f"quantidade : {self.quantidade}")
-      print(f"sucesso.   : {self.sucesso}")
-      print(f"erro.      : {self.erro}")
+      print(f"sucesso.   : {self.enumerar["sucesso"]}")
+      print(f"erro.      : {self.enumerar["erro"]}")
       self.enumerar["sucesso"] = 0
       self.enumerar["erro"] = 0
     except Exception as e:
