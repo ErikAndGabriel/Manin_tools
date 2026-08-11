@@ -1,5 +1,5 @@
 from ui.menus import menu_ip
-from ui.prompt import prompt_osint
+from ui.prompt import prompt_ip
 from ui.mensagens import erro, outro
 from modulos.osint.ip import Ip
 from core.clear import clear
@@ -9,14 +9,14 @@ def painel_ip():
   while True:
     try:
       print(menu_ip)
-      ot = int(input(prompt_osint))
+      ot = int(input(prompt_ip))
       if ot == 0:
         clear()
         break
         
       if str(ot) in ferramentas_ip:
         nome = ferramentas_ip[str(ot)]
-        prompt = input("ip > ")
+        prompt = input(f"ip {prompt_ip}")
         user = Ip(prompt, nome)
         user.IpBusca()
         outro()
