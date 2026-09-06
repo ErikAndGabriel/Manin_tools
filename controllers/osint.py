@@ -1,4 +1,4 @@
-from ui.menus import menu_osint
+from ui.menus.menus import menu_osint
 from ui.prompt import prompt_osint
 from ui.mensagens import erro
 from config.ferramentas.osint import ferramentas 
