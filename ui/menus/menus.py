@@ -146,3 +146,25 @@ HOME
 ├── [09] DOX
 └── [00] EXIT
 """
+
+menu_phishing = f"""{reset}
+HOME
+│
+├── [01] PHISHING
+│   │
+│   ├── {azul}[01]{reset} ZPHISHING
+│   ├── {azul}[02]{reset} FOTO
+│   ├── {azul}[03]{reset} INFO
+│   ├── {azul}[04]{reset} NETESCOLA
+│   └── {azul}[00]{reset} VOLTAR
+│
+├── [02] OSINT
+├── [03] NETWORK
+├── [04] INSTALL
+├── [05] MALWARES
+├── [06] WEB
+├── [07] XSS
+├── [08] LOOKUP
+├── [09] DOX
+└── [00] EXIT
+"""
