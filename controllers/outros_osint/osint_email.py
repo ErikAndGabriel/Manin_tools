@@ -7,7 +7,7 @@ from modulos.osint.email import Email
 def painel_email():
   while True:
     try:
-      print(menu_osint)
+      print(menu_email)
       email = input("[0] sair or e-mail > ")
       if email == "0":
         clear()
