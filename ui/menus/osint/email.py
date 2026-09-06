@@ -1,3 +1,5 @@
+from ui.color import azul, reset
+
 menu_email = f"""{reset}
 HOME
 │
