@@ -1,3 +1,4 @@
+from ui.color import azul, reset
 menu_cep = f"""{reset}
 HOME
 │
