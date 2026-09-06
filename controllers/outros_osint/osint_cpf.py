@@ -1,5 +1,5 @@
 from modulos.osint.cpf import SisregConsulta
-from ui.menus import menu_osint 
+from ui.menus.osint.cpf import menu_cpf 
 from ui.prompt import prompt_osint 
 from ui.mensagens import erro, outro
 from ui.banner import banner_execucao1 
