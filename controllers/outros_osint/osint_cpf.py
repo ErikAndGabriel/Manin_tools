@@ -7,7 +7,7 @@ from core.clear import clear
 def painel_cpf():
   while True:
     try:
-      print(menu_osint)
+      print(menu_cpf)
       cpf = input("[0] sair or cpf > ")
       if cpf == "0":
         clear()
