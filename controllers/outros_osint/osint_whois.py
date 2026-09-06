@@ -1,4 +1,4 @@
-from ui.menus import menu_osint 
+from ui.menus.osint.whois import menu_whois
 from ui.mensagens import erro, outro
 from core.clear import clear
 from modulos.osint.whois import BuscarWhois 
