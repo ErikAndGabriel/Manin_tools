@@ -1,4 +1,4 @@
-from ui.menus.menus import menu_telegram
+from ui.menus.osint.telegram import menu_telegram
 from ui.prompt import prompt_telegram 
 from ui.mensagens import erro, outro
 from core.clear import clear 
