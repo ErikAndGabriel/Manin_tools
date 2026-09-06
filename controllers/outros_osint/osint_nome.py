@@ -7,7 +7,7 @@ from modulos.osint.nome import NomeBusca
 def painel_nome():
   while True:
     try:
-      print(menu_osint)
+      print(menu_nome)
       nome = input(f"nome or 0 {prompt_osint}")
       if nome == "0":
         clear()
