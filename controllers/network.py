@@ -1,4 +1,4 @@
-from ui.menus import menu_network
+from ui.menus.menus import menu_network
 from ui.mensagens import erro
 from ui.prompt import prompt_network
 from core.clear import clear
