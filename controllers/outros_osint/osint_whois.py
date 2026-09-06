@@ -6,7 +6,7 @@ from modulos.osint.whois import BuscarWhois
 def painel_whois():
   while True:
     try:
-      print(menu_osint)
+      print(menu_whois)
       escolha = input("[0] sair or domain/ip > ")
       if escolha == "0":
         clear()
