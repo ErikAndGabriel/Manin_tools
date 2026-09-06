@@ -45,7 +45,6 @@ HOME
 │   │   ├── {azul}[01]{reset} TELEGRAM BOT (TOKEN)
 │   │   │   ├── [01] INFORMAÇÕES DO BOT
 │   │   │   ├── [02] INFORMAÇÕES DE CHAT
-│   │   │   ├── [03] INFORMAÇÕES DO USUÁRIO 
 │   │   │   └── [00] VOLTAR
 │   │   ├── {azul}[02]{reset} TELEGRAM CONTA (TOKEN/SESSÃO)
 │   │   └── {azul}[00]{reset} VOLTAR
