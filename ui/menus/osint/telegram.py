@@ -33,7 +33,7 @@ HOME
 │   └── [00] VOLTAR
 """
 
-menu_telegram = f"""{reset}
+menu_bot = f"""{reset}
 HOME
 │
 ├── [02] OSINT
@@ -70,7 +70,7 @@ HOME
 │   └── [00] VOLTAR
 """
 
-menu_telegram = f"""{reset}
+menu_token_conta = f"""{reset}
 HOME
 │
 ├── [02] OSINT
