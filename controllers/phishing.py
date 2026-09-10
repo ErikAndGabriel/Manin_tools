@@ -1,5 +1,5 @@
 from ui.menus.menus import menu_phishing 
-from ui.prompt import prompt_phishing
+from ui.prompt.prompt import prompt_phishing
 from ui.mensagens import erro
 from core.carregar import carregar_json 
 from core.clear import clear
