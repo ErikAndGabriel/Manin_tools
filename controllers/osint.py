@@ -1,5 +1,5 @@
 from ui.menus.menus import menu_osint
-from ui.prompt import prompt_osint
+from ui.prompt.prompt import prompt_osint
 from ui.mensagens import erro
 from config.ferramentas.osint import ferramentas 
 from core.clear import clear
