@@ -1,5 +1,5 @@
 from ui.menus.osint.nome import menu_nome
-from ui.prompt import prompt_osint 
+from ui.prompt.prompt import prompt_osint 
 from ui.mensagens import erro, outro
 from core.clear import clear 
 from modulos.osint.nome import NomeBusca
