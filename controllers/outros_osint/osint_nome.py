@@ -1,5 +1,5 @@
 from ui.menus.osint.nome import menu_nome
-from ui.prompt.prompt_osint import prompt_osint 
+from ui.prompt.prompt_osint import prompt_nome
 from ui.mensagens import erro, outro
 from core.clear import clear 
 from modulos.osint.nome import NomeBusca
@@ -8,7 +8,7 @@ def painel_nome():
   while True:
     try:
       print(menu_nome)
-      nome = input(f"nome or 0 {prompt_osint}")
+      nome = input(f"nome or 0 {prompt_nome}")
       if nome == "0":
         clear()
         break 
