@@ -1,5 +1,5 @@
 from ui.menus.osint.telegram import menu_telegram, menu_bot, menu_token_conta
-from ui.prompt import prompt_telegram, prompt_telegram_bot, prompt_telegram_conta
+from ui.prompt.prompt import prompt_telegram, prompt_telegram_bot, prompt_telegram_conta
 from ui.mensagens import erro, outro
 from core.clear import clear
 from modulos.osint.telegram_info_bot import BotTelegramInfo
