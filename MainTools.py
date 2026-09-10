@@ -1,5 +1,5 @@
 from ui.menus.menus import menu_principal
-from ui.prompt import prompt_menu
+from ui.prompt.prompt import prompt_menu
 from ui.mensagens import erro
 from ui.banner import banner_principal 
 from core.clear import clear
