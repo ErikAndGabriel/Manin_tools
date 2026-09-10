@@ -1,6 +1,6 @@
 from ui.menus.menus import menu_lookup
 from ui.mensagens import erro
-from ui.prompt import prompt_lorkup 
+from ui.prompt.prompt import prompt_lorkup 
 from core.carregar import carregar_json 
 from core.clear import clear
 
