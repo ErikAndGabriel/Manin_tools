@@ -2,12 +2,12 @@ from ui.menus.osint.whois import menu_whois
 from ui.mensagens import erro, outro
 from core.clear import clear
 from modulos.osint.whois import BuscarWhois 
-
+from ui.prompt.prompt_osint import prompt_whois
 def painel_whois():
   while True:
     try:
       print(menu_whois)
-      escolha = input("[0] sair or domain/ip > ")
+      escolha = input(prompt_whois)
       if escolha == "0":
         clear()
         break
