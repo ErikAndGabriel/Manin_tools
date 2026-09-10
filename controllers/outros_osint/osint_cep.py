@@ -1,5 +1,5 @@
 from ui.menus.osint.cep import menu_cep
-from ui.prompt import prompt_osint
+from ui.prompt.prompt import prompt_osint
 from ui.mensagens import erro, outro
 from ui.color import azul
 from modulos.osint.cep import Cep
