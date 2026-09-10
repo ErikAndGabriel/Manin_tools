@@ -8,7 +8,7 @@ def painel_cpf():
   while True:
     try:
       print(menu_cpf)
-      cpf = input("[0] sair or cpf > ")
+      cpf = input(prompt_cpf)
       if cpf == "0":
         clear()
         break
