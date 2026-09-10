@@ -2,7 +2,7 @@ import os
 from core.clear import clear
 from ui.mensagens import erro, outro 
 from ui.menus.osint.email import menu_email
-from ui.prompt.prompt import prompt_osint
+from ui.prompt.prompt_osint import prompt_osint
 from modulos.osint.email import Email 
 def painel_email():
   while True:
