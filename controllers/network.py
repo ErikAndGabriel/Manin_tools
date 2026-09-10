@@ -1,6 +1,6 @@
 from ui.menus.menus import menu_network
 from ui.mensagens import erro
-from ui.prompt import prompt_network
+from ui.prompt.prompt import prompt_network
 from core.clear import clear
 def painel_network():
   while True:
