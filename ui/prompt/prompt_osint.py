@@ -9,4 +9,4 @@ prompt_email = f"{azul}Olhar {verde}modulos/osint/email {azul}>{reset} "
 prompt_cpf = f"{azul}Olhar {verde}modulos/osint/cpf {azul}>{reset} "
 prompt_nome = f"{azul}Olhar {verde}modulos/osint/nome {azul}>{reset} "
 prompt_whois = f"{azul}Olhar {verde}modulos/osint/whois {azul}>{reset} "
-
+prompt_bin = f"{azul}Olhar {verde}modulos/osint/bin {azul}>{reset} "
