@@ -8,6 +8,9 @@ from modulos.osint.formatters.formate_api import (
     format_apicep,
     format_brasilapi,
     format_viacep,
+    format_freebinchecker,
+    format_binlist,
+    format_bincheck
 )
 FORMATADORES = {
     "ipwhois": format_ipwhois,
@@ -16,7 +19,11 @@ FORMATADORES = {
     "freeipapi": format_freeipapi,
     "ip_api": format_ip_api
 }
-
+FORMATADORES_BIN = {
+    "binlist": format_binlist,
+    "bincheck": format_bincheck,
+    "freebinchecker": format_freebinchecker
+}
 FORMATADORES_CEP = {
     "viacep": format_viacep,
     "brasilapi": format_brasilapi,
