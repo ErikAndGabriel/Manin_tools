@@ -4,7 +4,7 @@ from ui.mensagens import erro, outro
 from ui.color import azul
 from modulos.osint.bin import Bin
 from core.clear import clear
-from config.ferramentas.ip import ferramentas_bi 
+from config.ferramentas.ip import ferramentas_bin 
 from config.APIS.api_bin import APIS_BIN
 def painel_bin():
   while True:
