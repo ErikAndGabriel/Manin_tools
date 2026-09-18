@@ -16,3 +16,9 @@ ferramentas_cep = {
   "3": "apicep",
   "4": "api_cep"
 }
+
+ferramentas_bin = {
+    "1": "binlist",
+    "2": "bincheck",
+    "3": "freebinchecker"
+}
