@@ -1,7 +1,7 @@
 from ui.banner import banner_execucao1 
 from config.APIS.api_bin import APIS_BIN
 from core.config import timeout
-from modulos.osint.formatters.formato import FORMATADORES
+from modulos.osint.formatters.formato import FORMATADORES_BIN
 from core.clear import clear
 from modulos.osint.formatters.formate_api import format_ipwhois, format_ipapi, format_freeipapi, format_ip_api, format_ipinfo
 import json 
@@ -14,7 +14,7 @@ class Bin:
     self.timeout = timeout("api")
     
   def BinBusca(self):
-    if self.api_ip in APIS_BIN:
+    if self.api_bin in APIS_BIN:
       url = APIS_IP[self.api_bin]["url"].format(self.bin)
       try:
         resposta = requests.get(
@@ -23,10 +23,10 @@ class Bin:
         )
         if resposta.status_code == 200:
           data = resposta.json()
-          if self.api_bin in FORMATADORES:
+          if self.api_bin in FORMATADORES_BIN:
             clear()
             print(banner_execucao1)
-            FORMATADORES[self.api_bin](data)
+            FORMATADORES_BIN[self.api_bin](data)
             return True
           else:
             return "erro de api invalida"  
