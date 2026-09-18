@@ -1,4 +1,4 @@
-from ui.menus.osint.cep import menu_bin
+from ui.menus.osint.bin import menu_bin
 from ui.prompt.prompt_osint import prompt_bin
 from ui.mensagens import erro, outro
 from ui.color import azul
