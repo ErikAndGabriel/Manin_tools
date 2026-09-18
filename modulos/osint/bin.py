@@ -15,7 +15,7 @@ class Bin:
     
   def BinBusca(self):
     if self.api_bin in APIS_BIN:
-      url = APIS_IP[self.api_bin]["url"].format(self.bin)
+      url = APIS_BIN[self.api_bin]["url"].format(self.bin)
       try:
         resposta = requests.get(
           url, 
