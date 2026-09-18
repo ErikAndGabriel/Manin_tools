@@ -10,7 +10,7 @@ import requests
 class Bin:
   def __init__(self, bin, api):
     self.bin = bin
-    self.api_ip = api
+    self.api_bin = api
     self.timeout = timeout("api")
     
   def BinBusca(self):
