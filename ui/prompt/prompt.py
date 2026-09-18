@@ -1,4 +1,4 @@
-from ui.color import azul, verde, vermelho, reset, 
+from ui.color import azul, verde, vermelho, reset
 
 prompt_menu = f"{azul}Olhar {verde}~/ {azul}> "
 prompt_phishing = f"{azul}Olhar {verde}modulos/phishing {azul}>{reset} "
