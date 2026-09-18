@@ -24,7 +24,7 @@ HOME
 │   ├── [13] GITHUB
 │   ├── [14] INSTAGRAM
 │   ├── [15] NOME MÃE
-│   ├── [16] DNS
+│   ├── [16] BIN
 │   ├── [17] DNS
 │   ├── [18] CNS
 │   ├── [19] REDDIT
