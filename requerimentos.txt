@@ -1,2 +1,4 @@
 requests
 python-whois
+holehe
+colorama
