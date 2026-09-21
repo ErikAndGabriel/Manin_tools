@@ -14,6 +14,7 @@ ferramentas = {
   "4": painel_whois,
   "5": painel_telegram,
   "6": painel_nome,
+  "7": painel_user_name,
   "10": painel_cep,
   "16": painel_bin
 }
