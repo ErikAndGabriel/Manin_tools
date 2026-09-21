@@ -8,7 +8,7 @@ def painel_user_name():
            print(menu_user_name)
            escolha = int(input(prompt_user_name))
            if escolha == 1:
-              user = input(f"user_name {prompt_user_name})
+              user = input(f"user_name {prompt_user_name}")
               usuario = UserName(user)
               usuario.buscar()
               outro()
