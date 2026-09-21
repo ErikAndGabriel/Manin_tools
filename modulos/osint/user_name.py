@@ -28,5 +28,3 @@ class UserName:
        except KayboardInterrupt:
           outro()
 
-u = UserName("erikmxp")
-u.buscar()
