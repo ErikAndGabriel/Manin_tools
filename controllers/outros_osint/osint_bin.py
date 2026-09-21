@@ -20,7 +20,7 @@ def painel_bin():
         try:
           bin = int(input("bin > "))
         except ValueError:
-          erro("somente numeros no cep")
+          erro("somente numeros no bin")
           clear()
           continue 
         user = Bin(bin, api)
