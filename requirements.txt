@@ -3,3 +3,4 @@ python-whois
 googlesearch-python
 holehe
 colorama
+socket
