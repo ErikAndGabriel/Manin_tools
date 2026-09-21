@@ -19,3 +19,9 @@ def mensagem(data):
 def personalizar(data):
   print(roxo, data)
   outro()
+
+def sucesso_loop(data):
+  print(verde, data)
+
+def erro_loop(data):
+  print(vermelho, data)
