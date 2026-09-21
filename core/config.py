@@ -2,7 +2,7 @@ from core.carregar import carregar_json
 import random 
 def timeout(tempo=5):
   if tempo == "api":
-    return 5
+    return 10
   elif tempo == "scaner":
     return 10
   elif tempo == "resposta":
