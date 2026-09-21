@@ -34,7 +34,7 @@ HOME
 │   ├── {azul}[13]{reset} GITHUB
 │   ├── {azul}[14]{reset} INSTAGRAM
 │   ├── {azul}[15]{reset} NOME MÃE
-│   ├── {azul}[16]{reset} DNS
+│   ├── {azul}[16]{reset} BIN
 │   ├── {azul}[17]{reset} DNS
 │   ├── {azul}[18]{reset} CNS
 │   ├── {azul}[19]{reset} REDDIT
