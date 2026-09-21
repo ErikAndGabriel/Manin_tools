@@ -13,7 +13,7 @@ def painel_nome():
         clear()
         break 
       try:
-        quantidade = int(input(f"quantidade {prompt_osint}"))
+        quantidade = int(input(f"quantidade {prompt_nome}"))
       except ValueError:
         erro("somente numeros")
         outro()
