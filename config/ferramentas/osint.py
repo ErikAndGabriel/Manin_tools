@@ -6,6 +6,7 @@ from controllers.outros_osint.osint_whois import painel_whois
 from controllers.outros_osint.osint_telegram import painel_telegram
 from controllers.outros_osint.osint_nome import painel_nome
 from controllers.outros_osint.osint_bin import painel_bin
+from controllers.outros_osint.osint_username import painel_user_name
 ferramentas = {
   "1": painel_ip,
   "2": painel_email,
