@@ -1,3 +1,11 @@
+"""Tomei a liberdade de comentar neste arquivo, 
+"config/sites.py". Esse arquivo é totalmente estruturado
+em um dicionário, que tem a função de armazenar sites para uma técnica de OSINT,
+como a busca por usernames. Por exemplo: seu amigo usa um determinado nome de
+usuário no Instagram; o que impede que ele use o mesmo nome em 
+outras páginas, como o Xvideos?
+"""
+
 SITES = {
     "instagram": "https://instagram.com/{}",
     "twitter": "https://twitter.com/{}",
